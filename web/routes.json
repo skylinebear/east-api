@@ -2,141 +2,141 @@
   {
     "route": "/",
     "file": "index.html",
-    "title": "东方和创 | 首页"
+    "title": "EASTCREA | 首页"
   },
   {
     "route": "/pricing",
     "file": "pricing/index.html",
-    "title": "东方和创 | 模型广场"
+    "title": "EASTCREA | 模型广场"
   },
   {
     "route": "/about",
     "file": "about/index.html",
-    "title": "东方和创 | 关于"
+    "title": "EASTCREA | 关于"
   },
   {
     "route": "/docs",
     "file": "docs/index.html",
-    "title": "东方和创 | 文档"
+    "title": "EASTCREA | 文档"
   },
   {
     "route": "/login",
     "file": "login/index.html",
-    "title": "东方和创 | 登录"
+    "title": "EASTCREA | 登录"
   },
   {
     "route": "/reset",
     "file": "reset/index.html",
-    "title": "东方和创 | 重置密码"
+    "title": "EASTCREA | 重置密码"
   },
   {
     "route": "/register",
     "file": "register/index.html",
-    "title": "东方和创 | 注册"
+    "title": "EASTCREA | 注册"
   },
   {
     "route": "/user-agreement",
     "file": "user-agreement/index.html",
-    "title": "东方和创 | 用户协议"
+    "title": "EASTCREA | 用户协议"
   },
   {
     "route": "/privacy-policy",
     "file": "privacy-policy/index.html",
-    "title": "东方和创 | 隐私政策"
+    "title": "EASTCREA | 隐私政策"
   },
   {
     "route": "/forbidden",
     "file": "forbidden/index.html",
-    "title": "东方和创 | 无权限"
+    "title": "EASTCREA | 无权限"
   },
   {
     "route": "/setup",
     "file": "setup/index.html",
-    "title": "东方和创 | 初始化"
+    "title": "EASTCREA | 初始化"
   },
   {
     "route": "/chat2link",
     "file": "chat2link/index.html",
-    "title": "东方和创 | 登录继续"
+    "title": "EASTCREA | 登录继续"
   },
   {
     "route": "/console",
     "file": "console/index.html",
-    "title": "东方和创 | 控制台"
+    "title": "EASTCREA | 控制台"
   },
   {
     "route": "/console/playground",
     "file": "console/playground/index.html",
-    "title": "东方和创 | 操练场"
+    "title": "EASTCREA | 操练场"
   },
   {
     "route": "/console/chat",
     "file": "console/chat/index.html",
-    "title": "东方和创 | 聊天"
+    "title": "EASTCREA | 聊天"
   },
   {
     "route": "/console/token",
     "file": "console/token/index.html",
-    "title": "东方和创 | 令牌管理"
+    "title": "EASTCREA | 令牌管理"
   },
   {
     "route": "/console/log",
     "file": "console/log/index.html",
-    "title": "东方和创 | 使用日志"
+    "title": "EASTCREA | 使用日志"
   },
   {
     "route": "/console/midjourney",
     "file": "console/midjourney/index.html",
-    "title": "东方和创 | 绘图日志"
+    "title": "EASTCREA | 绘图日志"
   },
   {
     "route": "/console/task",
     "file": "console/task/index.html",
-    "title": "东方和创 | 任务日志"
+    "title": "EASTCREA | 任务日志"
   },
   {
     "route": "/console/topup",
     "file": "console/topup/index.html",
-    "title": "东方和创 | 钱包管理"
+    "title": "EASTCREA | 钱包管理"
   },
   {
     "route": "/console/personal",
     "file": "console/personal/index.html",
-    "title": "东方和创 | 个人设置"
+    "title": "EASTCREA | 个人设置"
   },
   {
     "route": "/console/channel",
     "file": "console/channel/index.html",
-    "title": "东方和创 | 渠道管理"
+    "title": "EASTCREA | 渠道管理"
   },
   {
     "route": "/console/subscription",
     "file": "console/subscription/index.html",
-    "title": "东方和创 | 订阅管理"
+    "title": "EASTCREA | 订阅管理"
   },
   {
     "route": "/console/models",
     "file": "console/models/index.html",
-    "title": "东方和创 | 模型管理"
+    "title": "EASTCREA | 模型管理"
   },
   {
     "route": "/console/deployment",
     "file": "console/deployment/index.html",
-    "title": "东方和创 | 模型部署"
+    "title": "EASTCREA | 模型部署"
   },
   {
     "route": "/console/redemption",
     "file": "console/redemption/index.html",
-    "title": "东方和创 | 兑换码管理"
+    "title": "EASTCREA | 兑换码管理"
   },
   {
     "route": "/console/user",
     "file": "console/user/index.html",
-    "title": "东方和创 | 用户管理"
+    "title": "EASTCREA | 用户管理"
   },
   {
     "route": "/console/setting",
     "file": "console/setting/index.html",
-    "title": "东方和创 | 系统设置"
+    "title": "EASTCREA | 系统设置"
   }
 ]

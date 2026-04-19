@@ -759,7 +759,7 @@ export default function Setting() {
                 <TextInput k="SMTPServer" label="SMTP 服务器" placeholder="smtp.example.com" />
                 <TextInput k="SMTPPort" label="端口" type="number" placeholder="465" />
                 <TextInput k="SMTPAccount" label="账号" placeholder="no-reply@example.com" />
-                <TextInput k="SMTPFrom" label="发件人名称" placeholder="东方和创" />
+                <TextInput k="SMTPFrom" label="发件人名称" placeholder="EASTCREA" />
                 <TextInput k="SMTPToken" label="密码 / Token" />
               </div>
               <div className="form-grid">
@@ -793,10 +793,10 @@ export default function Setting() {
           {activePanel === 'other' && (<>
             <Section title="站点信息" label="Site" saveKeys={['SystemName','Logo','Footer','Notice']}>
               <div className="form-grid">
-                <TextInput k="SystemName" label="站点名称" placeholder="东方和创" />
+                <TextInput k="SystemName" label="站点名称" placeholder="EASTCREA" />
                 <TextInput k="Logo" label="站点 Logo URL" placeholder="https://..." />
               </div>
-              <TextInput k="Footer" label="页脚内容（支持 HTML）" placeholder="© 2025 东方和创" />
+              <TextInput k="Footer" label="页脚内容（支持 HTML）" placeholder="© 2025 EASTCREA" />
               <TextArea k="Notice" label="首页公告" rows={4} />
             </Section>
 

@@ -3,7 +3,7 @@ import { useState, useEffect, createContext, useContext } from 'react'
 import { getSelf, logout as apiLogout, getStatus } from '../api.js'
 
 const AuthContext = createContext(null)
-const DEFAULT_BRAND_NAME = '东方和创'
+const DEFAULT_BRAND_NAME = 'EASTCREA'
 const DEFAULT_BRAND_LOGO = '/logo.png'
 
 const resolveBrandName = (status) => status?.system_name?.trim() || DEFAULT_BRAND_NAME
