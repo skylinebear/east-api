@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/types"
 	"github.com/gin-gonic/gin"
 )
 

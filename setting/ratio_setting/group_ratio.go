@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/setting/config"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/setting/config"
+	"github.com/skylinebear/new-api/types"
 )
 
 var defaultGroupRatio = map[string]float64{

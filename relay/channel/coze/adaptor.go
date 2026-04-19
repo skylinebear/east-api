@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/relay/channel"
-	"github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/new-api/relay/channel"
+	"github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/new-api/types"
 
 	"github.com/gin-gonic/gin"
 )

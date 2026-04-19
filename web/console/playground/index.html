@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EASTCREA | 操练场</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="site-header">
+    <a class="header-brand" href="../../index.html">
+      <img src="../../assets/logo.png" alt="EASTCREA" />
+      <strong>EASTCREA</strong>
+    </a>
+    <div class="header-main">
+      <nav class="header-nav">
+        <a href="../../index.html">首页</a>
+        <a class="active" href="../index.html">控制台</a>
+        <a href="../../pricing/index.html">模型广场</a>
+        <a href="../../docs/index.html">文档</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-button user-pill" href="../personal/index.html">
+          <span class="avatar-dot"></span><strong>张明辉</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="console-wrap">
+    <aside class="console-sidebar">
+      <div class="sidebar-card">
+        <span class="mini-label">Console</span>
+        <div class="menu-section">
+          <div class="menu-section-title">工作区</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../index.html">数据看板</a>
+            <a class="menu-link active" href="index.html">操练场</a>
+            <a class="menu-link" href="../chat/index.html">聊天</a>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-section-title">账户中心</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../token/index.html">令牌管理</a>
+            <a class="menu-link" href="../log/index.html">使用日志</a>
+            <a class="menu-link" href="../midjourney/index.html">绘图日志</a>
+            <a class="menu-link" href="../task/index.html">任务日志</a>
+            <a class="menu-link" href="../topup/index.html">钱包管理</a>
+            <a class="menu-link" href="../personal/index.html">个人设置</a>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-section-title">管理后台</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../channel/index.html">渠道管理</a>
+            <a class="menu-link" href="../subscription/index.html">订阅管理</a>
+            <a class="menu-link" href="../models/index.html">模型管理</a>
+            <a class="menu-link" href="../deployment/index.html">模型部署</a>
+            <a class="menu-link" href="../redemption/index.html">兑换码管理</a>
+            <a class="menu-link" href="../user/index.html">用户管理</a>
+            <a class="menu-link" href="../setting/index.html">系统设置</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="console-main">
+      <div class="topbar-card">
+        <div class="crumbs compact">
+          <span class="mini-label">Console / 操练场</span>
+          <h1>API 操练场</h1>
+          <span class="workspace-title">构建请求参数，实时预览响应输出，无需离开控制台。</span>
+        </div>
+        <div class="button-row">
+          <a class="button tiny" href="../log/index.html">查看日志</a>
+          <button class="button tiny primary" id="playground-send">发送请求</button>
+        </div>
+      </div>
+
+      <div class="console-content">
+        <section class="page-hero">
+          <span class="eyebrow">Playground</span>
+          <h2>操练场</h2>
+          <p>在这里配置模型参数，构造请求体，直接预览 API 调用的响应结果。使用 Mock 模式快速体验，无需真实 Key。</p>
+        </section>
+
+        <div class="playground-layout">
+          <article class="panel" style="align-self:start">
+            <span class="mini-label">Configuration</span>
+            <h2 class="panel-title">模型配置</h2>
+            <div class="form-stack">
+              <div class="form-grid">
+                <div class="field">
+                  <label>用户分组</label>
+                  <select><option>default</option><option>vip</option><option>free</option></select>
+                </div>
+                <div class="field">
+                  <label>模型</label>
+                  <select id="pg-model">
+                    <option>gpt-4o</option>
+                    <option>gpt-4o-mini</option>
+                    <option>gpt-4.1</option>
+                    <option>claude-3-7-sonnet</option>
+                    <option>claude-3-5-haiku</option>
+                    <option>gemini-2.5-pro</option>
+                    <option>deepseek-v3</option>
+                    <option>qwen-max</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label>Temperature &nbsp;<span id="pg-temp-display" style="font-family:var(--mono);color:var(--blue)">0.7</span></label>
+                <input type="range" min="0" max="2" value="0.7" step="0.1" id="pg-temp" data-display="pg-temp-display" />
+                <span class="field-note">控制输出随机度。0 = 确定性，2 = 高创意</span>
+              </div>
+              <div class="field">
+                <label>系统提示词（System Prompt）</label>
+                <textarea id="pg-system" rows="3">你是一名善于整理信息与总结结构的团队助手。</textarea>
+              </div>
+              <div class="field">
+                <label>用户输入（User Message）</label>
+                <textarea id="pg-input" rows="4">请根据最近一周使用情况，整理出团队最常用的模型类型。</textarea>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <span class="mini-label">Preview</span>
+            <h2 class="panel-title">请求预览与响应输出</h2>
+            <div class="tabs" data-tabs="playground">
+              <button data-tab="json" class="active">请求体 JSON</button>
+              <button data-tab="response">响应输出</button>
+              <button data-tab="debug">调试说明</button>
+            </div>
+
+            <div data-panel="playground" data-tab-content="json">
+              <div class="response-area" id="playground-json" style="min-height:380px">{
+  "model": "gpt-4o",
+  "temperature": 0.7,
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是一名善于整理信息与总结结构的团队助手。"
+    },
+    {
+      "role": "user",
+      "content": "请根据最近一周使用情况，整理出团队最常用的模型类型。"
+    }
+  ]
+}</div>
+            </div>
+
+            <div data-panel="playground" data-tab-content="response" hidden>
+              <div class="response-area" id="playground-response" style="min-height:380px">点击右上角「发送请求」按钮，查看模型响应。</div>
+            </div>
+
+            <div data-panel="playground" data-tab-content="debug" hidden>
+              <div class="notice">
+                <strong>调试说明</strong><br/><br/>
+                · 当前为 Mock 模式，不会消耗真实 Token<br/>
+                · 实际请求路径：<code>POST https://api.eastcrea.com/v1/chat/completions</code><br/>
+                · Header 需包含：<code>Authorization: Bearer {YOUR_TOKEN}</code><br/>
+                · 响应格式遵循 OpenAI Chat Completions API 标准<br/>
+                · 支持 stream 模式，设置 <code>"stream": true</code> 即可启用逐字输出
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>EASTCREA</strong>更体面的团队智能工作前台。</div>
+    <div><a href="../../user-agreement/index.html">用户协议</a> &nbsp;·&nbsp; <a href="../../privacy-policy/index.html">隐私政策</a></div>
+  </footer>
+
+</div>
+<script src="../../app.js" defer></script>
+</body>
+</html>

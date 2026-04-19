@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/relay/channel"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/new-api/relay/channel"
+	relaycommon "github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/new-api/types"
 
 	"github.com/gin-gonic/gin"
 )

@@ -9,13 +9,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/new-api/logger"
+	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/new-api/setting"
+	"github.com/skylinebear/new-api/setting/system_setting"
 
 	"github.com/gin-gonic/gin"
 )

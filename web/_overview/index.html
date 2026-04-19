@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EASTCREA | 原型总览</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="site-header">
+    <a class="header-brand" href="../index.html">
+      <img src="../assets/logo.png" alt="EASTCREA" />
+      <strong>EASTCREA</strong>
+    </a>
+    <div class="header-main">
+      <nav class="header-nav">
+        <a href="../index.html">首页</a>
+        <a href="../console/index.html">控制台</a>
+        <a href="../pricing/index.html">模型广场</a>
+        <a href="../docs/index.html">文档</a>
+      </nav>
+      <div class="header-actions">
+        <span class="badge blue">Prototype v4</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="public-main">
+    <div class="hero-card" style="padding:40px 34px 36px">
+      <span class="eyebrow">Frontend Prototype</span>
+      <h1 style="font-size:clamp(36px,5vw,72px);margin:22px auto 18px;max-width:none">原型页面总览</h1>
+      <p class="lead" style="max-width:640px">EASTCREA 前端原型系统，共 29 个页面，完整覆盖公开站点、控制台与管理后台。所有页面静态化，支持 file:// 直接打开。</p>
+    </div>
+
+    <!-- 公开站点 -->
+    <div class="surface-card" style="padding:30px 34px">
+      <div class="section-head" style="margin-bottom:20px">
+        <div>
+          <span class="mini-label">Public Site</span>
+          <h2 style="font-size:clamp(22px,2.8vw,36px);line-height:1.1">公开站点</h2>
+        </div>
+        <span class="badge blue">8 页</span>
+      </div>
+      <div class="card-grid overview" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:14px">
+        <a class="overview-link" href="../index.html">
+          <span class="mini-label">Home</span>
+          <h3 style="font-size:18px;margin-bottom:6px">首页</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">Hero、提供商展示、CTA 入口</p>
+        </a>
+        <a class="overview-link" href="../pricing/index.html">
+          <span class="mini-label">Pricing</span>
+          <h3 style="font-size:18px;margin-bottom:6px">模型广场</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">模型目录、筛选、定价卡片</p>
+        </a>
+        <a class="overview-link" href="../docs/index.html">
+          <span class="mini-label">Docs</span>
+          <h3 style="font-size:18px;margin-bottom:6px">文档中心</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">快捷入口、侧边栏导航</p>
+        </a>
+        <a class="overview-link" href="../about/index.html">
+          <span class="mini-label">About</span>
+          <h3 style="font-size:18px;margin-bottom:6px">关于我们</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">团队介绍、理念说明</p>
+        </a>
+        <a class="overview-link" href="../login/index.html">
+          <span class="mini-label">Auth</span>
+          <h3 style="font-size:18px;margin-bottom:6px">登录</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">账号密码登录表单</p>
+        </a>
+        <a class="overview-link" href="../register/index.html">
+          <span class="mini-label">Auth</span>
+          <h3 style="font-size:18px;margin-bottom:6px">注册</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">新用户注册流程</p>
+        </a>
+        <a class="overview-link" href="../user-agreement/index.html">
+          <span class="mini-label">Legal</span>
+          <h3 style="font-size:18px;margin-bottom:6px">用户协议</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">服务条款全文</p>
+        </a>
+        <a class="overview-link" href="../privacy-policy/index.html">
+          <span class="mini-label">Legal</span>
+          <h3 style="font-size:18px;margin-bottom:6px">隐私政策</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">数据处理说明</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 控制台工作区 -->
+    <div class="surface-card" style="padding:30px 34px">
+      <div class="section-head" style="margin-bottom:20px">
+        <div>
+          <span class="mini-label">Console — Workspace</span>
+          <h2 style="font-size:clamp(22px,2.8vw,36px);line-height:1.1">控制台工作区</h2>
+        </div>
+        <span class="badge blue">4 页</span>
+      </div>
+      <div class="card-grid overview" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:14px">
+        <a class="overview-link" href="../console/index.html">
+          <span class="mini-label">Dashboard</span>
+          <h3 style="font-size:18px;margin-bottom:6px">数据看板</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">KPI、图表、进度概览</p>
+        </a>
+        <a class="overview-link" href="../console/playground/index.html">
+          <span class="mini-label">Playground</span>
+          <h3 style="font-size:18px;margin-bottom:6px">操练场</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">模型调试、请求预览</p>
+        </a>
+        <a class="overview-link" href="../console/chat/index.html">
+          <span class="mini-label">Chat</span>
+          <h3 style="font-size:18px;margin-bottom:6px">聊天</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">多会话 AI 对话界面</p>
+        </a>
+        <a class="overview-link" href="../console/personal/index.html">
+          <span class="mini-label">Profile</span>
+          <h3 style="font-size:18px;margin-bottom:6px">个人设置</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">账号信息与偏好</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 账户中心 -->
+    <div class="surface-card" style="padding:30px 34px">
+      <div class="section-head" style="margin-bottom:20px">
+        <div>
+          <span class="mini-label">Console — Account</span>
+          <h2 style="font-size:clamp(22px,2.8vw,36px);line-height:1.1">账户中心</h2>
+        </div>
+        <span class="badge blue">5 页</span>
+      </div>
+      <div class="card-grid overview" style="grid-template-columns:repeat(5,minmax(0,1fr));gap:14px">
+        <a class="overview-link" href="../console/token/index.html">
+          <span class="mini-label">Token</span>
+          <h3 style="font-size:18px;margin-bottom:6px">令牌管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">API Key 创建与管理</p>
+        </a>
+        <a class="overview-link" href="../console/log/index.html">
+          <span class="mini-label">Logs</span>
+          <h3 style="font-size:18px;margin-bottom:6px">使用日志</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">请求记录与费用明细</p>
+        </a>
+        <a class="overview-link" href="../console/midjourney/index.html">
+          <span class="mini-label">Image</span>
+          <h3 style="font-size:18px;margin-bottom:6px">绘图日志</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">图像生成历史记录</p>
+        </a>
+        <a class="overview-link" href="../console/task/index.html">
+          <span class="mini-label">Tasks</span>
+          <h3 style="font-size:18px;margin-bottom:6px">任务日志</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">异步任务执行状态</p>
+        </a>
+        <a class="overview-link" href="../console/topup/index.html">
+          <span class="mini-label">Wallet</span>
+          <h3 style="font-size:18px;margin-bottom:6px">钱包管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">余额查看与充值</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 管理后台 -->
+    <div class="surface-card" style="padding:30px 34px">
+      <div class="section-head" style="margin-bottom:20px">
+        <div>
+          <span class="mini-label">Console — Admin</span>
+          <h2 style="font-size:clamp(22px,2.8vw,36px);line-height:1.1">管理后台</h2>
+        </div>
+        <span class="badge blue">8 页</span>
+      </div>
+      <div class="card-grid overview" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:14px">
+        <a class="overview-link" href="../console/channel/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">渠道管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">上游 API 渠道配置</p>
+        </a>
+        <a class="overview-link" href="../console/subscription/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">订阅管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">套餐与计划配置</p>
+        </a>
+        <a class="overview-link" href="../console/models/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">模型管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">模型列表与权限</p>
+        </a>
+        <a class="overview-link" href="../console/deployment/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">模型部署</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">部署实例状态管理</p>
+        </a>
+        <a class="overview-link" href="../console/redemption/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">兑换码管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">批量生成与核销</p>
+        </a>
+        <a class="overview-link" href="../console/user/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">用户管理</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">账户列表与权限组</p>
+        </a>
+        <a class="overview-link" href="../console/setting/index.html">
+          <span class="mini-label">Admin</span>
+          <h3 style="font-size:18px;margin-bottom:6px">系统设置</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">运营、支付、性能配置</p>
+        </a>
+        <a class="overview-link" href="../404/index.html">
+          <span class="mini-label">System</span>
+          <h3 style="font-size:18px;margin-bottom:6px">404 页面</h3>
+          <p style="font-size:13px;color:var(--ink-faint)">页面未找到提示</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 设计令牌参考 -->
+    <div class="surface-card" style="padding:30px 34px">
+      <div class="section-head" style="margin-bottom:20px">
+        <div>
+          <span class="mini-label">Design Tokens</span>
+          <h2 style="font-size:clamp(22px,2.8vw,36px);line-height:1.1">设计令牌</h2>
+        </div>
+      </div>
+      <div class="split-2" style="gap:18px">
+        <div class="panel" style="gap:14px">
+          <span class="mini-label">Colors</span>
+          <div style="display:grid;gap:10px">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:36px;height:36px;border-radius:10px;background:#f4eadf;border:1px solid var(--line)"></div>
+              <div><code style="font-family:var(--mono);font-size:12px">--paper</code><p style="font-size:12px;color:var(--ink-faint);margin-top:2px">#f4eadf — 纸面底色</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:36px;height:36px;border-radius:10px;background:#4573b8;border:1px solid var(--line)"></div>
+              <div><code style="font-family:var(--mono);font-size:12px">--blue</code><p style="font-size:12px;color:var(--ink-faint);margin-top:2px">#4573b8 — 主蓝</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:36px;height:36px;border-radius:10px;background:#1c2330;border:1px solid var(--line)"></div>
+              <div><code style="font-family:var(--mono);font-size:12px">--ink</code><p style="font-size:12px;color:var(--ink-faint);margin-top:2px">#1c2330 — 墨色文字</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:36px;height:36px;border-radius:10px;background:#b55b49;border:1px solid var(--line)"></div>
+              <div><code style="font-family:var(--mono);font-size:12px">--red</code><p style="font-size:12px;color:var(--ink-faint);margin-top:2px">#b55b49 — 警示红</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:36px;height:36px;border-radius:10px;background:#5f7d71;border:1px solid var(--line)"></div>
+              <div><code style="font-family:var(--mono);font-size:12px">--green</code><p style="font-size:12px;color:var(--ink-faint);margin-top:2px">#5f7d71 — 成功绿</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:36px;height:36px;border-radius:10px;background:#a07f48;border:1px solid var(--line)"></div>
+              <div><code style="font-family:var(--mono);font-size:12px">--gold</code><p style="font-size:12px;color:var(--ink-faint);margin-top:2px">#a07f48 — 金色强调</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel" style="gap:14px">
+          <span class="mini-label">Typography</span>
+          <div style="display:grid;gap:16px">
+            <div>
+              <p style="font-family:'Iowan Old Style','Baskerville',serif;font-size:28px;font-weight:700;letter-spacing:-0.04em;margin-bottom:4px">Heading Serif</p>
+              <p style="font-size:12px;color:var(--ink-faint)">Iowan Old Style / Baskerville — 大标题</p>
+            </div>
+            <div>
+              <p style="font-family:'Helvetica Neue','PingFang SC',sans-serif;font-size:22px;font-weight:700;letter-spacing:-0.035em;margin-bottom:4px">Heading Sans</p>
+              <p style="font-size:12px;color:var(--ink-faint)">Helvetica Neue / PingFang SC — 卡片标题</p>
+            </div>
+            <div>
+              <p style="font-family:'Helvetica Neue','PingFang SC',sans-serif;font-size:16px;line-height:1.8;margin-bottom:4px">Body text — 正文排版，行高 1.8，适合长阅读场景。</p>
+              <p style="font-size:12px;color:var(--ink-faint)">Body — 16px / line-height 1.8</p>
+            </div>
+            <div>
+              <p style="font-family:'SF Mono','Menlo',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:4px">MONO LABEL</p>
+              <p style="font-size:12px;color:var(--ink-faint)">SF Mono — 标签、状态码、eyebrow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>EASTCREA</strong>更体面的团队智能工作前台。</div>
+    <div><a href="../user-agreement/index.html">用户协议</a> &nbsp;·&nbsp; <a href="../privacy-policy/index.html">隐私政策</a></div>
+  </footer>
+
+</div>
+<script src="../app.js" defer></script>
+</body>
+</html>

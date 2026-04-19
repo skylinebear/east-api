@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	commonRelay "github.com/QuantumNous/new-api/relay/common"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/new-api/dto"
+	commonRelay "github.com/skylinebear/new-api/relay/common"
 )
 
 type TaskStatus string

@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/pkg/cachex"
 	"github.com/samber/hot"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/pkg/cachex"
 	"gorm.io/gorm"
 )
 
@@ -38,8 +38,8 @@ var (
 )
 
 const (
-	subscriptionPlanCacheNamespace     = "new-api:subscription_plan:v1"
-	subscriptionPlanInfoCacheNamespace = "new-api:subscription_plan_info:v1"
+	subscriptionPlanCacheNamespace     = "eastcrea:subscription_plan:v1"
+	subscriptionPlanInfoCacheNamespace = "eastcrea:subscription_plan_info:v1"
 )
 
 var (

@@ -1,8 +1,8 @@
 # 宝塔面板部署教程
 
-本文档提供使用宝塔面板 Docker 功能部署 New API 的图文教程。
+本文档提供使用宝塔面板 Docker 功能部署 EASTCREA 的图文教程。
 
-> 📖 官方文档：[宝塔面板部署](https://docs.newapi.pro/zh/docs/installation/deployment-methods/bt-docker-installation)
+> 📖 官方文档：[宝塔面板部署](https://github.com/skylinebear/new-api/tree/main/docs)
 
 ***
 
@@ -32,7 +32,7 @@
 
 ***
 
-## 步骤三：安装 New API
+## 步骤三：安装 EASTCREA
 
 ### 方法一：使用宝塔应用商店（推荐）
 
@@ -136,10 +136,10 @@ docker-compose down && docker-compose up -d
 
 ## 相关链接
 
-- [官方文档](https://docs.newapi.pro/zh/docs/installation)
-- [环境变量配置](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables)
-- [常见问题](https://docs.newapi.pro/zh/docs/support/faq)
-- [GitHub 仓库](https://github.com/QuantumNous/new-api)
+- [官方文档](https://github.com/skylinebear/new-api/tree/main/docs)
+- [环境变量配置](https://github.com/skylinebear/new-api/tree/main/docs)
+- [常见问题](https://github.com/skylinebear/new-api/tree/main/docs)
+- [GitHub 仓库](https://github.com/skylinebear/new-api)
 
 ***
 

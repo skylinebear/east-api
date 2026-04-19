@@ -10,15 +10,15 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/i18n"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/new-api/i18n"
+	"github.com/skylinebear/new-api/logger"
+	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/new-api/setting"
 
-	"github.com/QuantumNous/new-api/constant"
+	"github.com/skylinebear/new-api/constant"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

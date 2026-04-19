@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EASTCREA | 聊天</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="site-header">
+    <a class="header-brand" href="../../index.html">
+      <img src="../../assets/logo.png" alt="EASTCREA" />
+      <strong>EASTCREA</strong>
+    </a>
+    <div class="header-main">
+      <nav class="header-nav">
+        <a href="../../index.html">首页</a>
+        <a class="active" href="../index.html">控制台</a>
+        <a href="../../pricing/index.html">模型广场</a>
+        <a href="../../docs/index.html">文档</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-button user-pill" href="../personal/index.html">
+          <span class="avatar-dot"></span><strong>张明辉</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="console-wrap">
+    <aside class="console-sidebar">
+      <div class="sidebar-card">
+        <span class="mini-label">Console</span>
+        <div class="menu-section">
+          <div class="menu-section-title">工作区</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../index.html">数据看板</a>
+            <a class="menu-link" href="../playground/index.html">操练场</a>
+            <a class="menu-link active" href="index.html">聊天</a>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-section-title">账户中心</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../token/index.html">令牌管理</a>
+            <a class="menu-link" href="../log/index.html">使用日志</a>
+            <a class="menu-link" href="../midjourney/index.html">绘图日志</a>
+            <a class="menu-link" href="../task/index.html">任务日志</a>
+            <a class="menu-link" href="../topup/index.html">钱包管理</a>
+            <a class="menu-link" href="../personal/index.html">个人设置</a>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-section-title">管理后台</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../channel/index.html">渠道管理</a>
+            <a class="menu-link" href="../subscription/index.html">订阅管理</a>
+            <a class="menu-link" href="../models/index.html">模型管理</a>
+            <a class="menu-link" href="../deployment/index.html">模型部署</a>
+            <a class="menu-link" href="../redemption/index.html">兑换码管理</a>
+            <a class="menu-link" href="../user/index.html">用户管理</a>
+            <a class="menu-link" href="../setting/index.html">系统设置</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="console-main">
+      <div class="topbar-card">
+        <div class="crumbs compact">
+          <span class="mini-label">Console / 聊天</span>
+          <h1>AI 聊天</h1>
+          <span class="workspace-title">多模型会话，历史记录自动保存。</span>
+        </div>
+        <div class="button-row">
+          <button class="button tiny" id="new-chat-btn">新建会话</button>
+        </div>
+      </div>
+
+      <div class="console-content">
+        <div class="chat-shell">
+          <!-- Session List -->
+          <div class="chat-sessions">
+            <div class="chat-sessions-header">
+              <h3>会话列表</h3>
+              <button class="button tiny" style="width:100%" id="new-chat-btn-sidebar">+ 新建会话</button>
+            </div>
+            <div class="chat-session-list">
+              <div class="chat-session-item active">
+                <strong>团队模型使用分析</strong>
+                <span>gpt-4o · 今天 09:42</span>
+              </div>
+              <div class="chat-session-item">
+                <strong>产品说明文档起草</strong>
+                <span>claude-3.7-sonnet · 昨天</span>
+              </div>
+              <div class="chat-session-item">
+                <strong>API 接入问题排查</strong>
+                <span>gpt-4o-mini · 昨天</span>
+              </div>
+              <div class="chat-session-item">
+                <strong>季度报告总结</strong>
+                <span>gemini-2.5-pro · 4/15</span>
+              </div>
+              <div class="chat-session-item">
+                <strong>代码审查与优化</strong>
+                <span>claude-3.7-sonnet · 4/14</span>
+              </div>
+              <div class="chat-session-item">
+                <strong>竞品调研整理</strong>
+                <span>deepseek-v3 · 4/12</span>
+              </div>
+            </div>
+            <div class="chat-sessions-footer">
+              <span style="font-size:12px;color:var(--ink-faint)">共 6 个会话 · 本月</span>
+            </div>
+          </div>
+
+          <!-- Chat Main -->
+          <div class="chat-main">
+            <div class="chat-header-bar">
+              <div style="display:flex;align-items:center;gap:12px">
+                <strong style="font-size:15px">团队模型使用分析</strong>
+                <span class="badge blue">进行中</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <select>
+                  <option>gpt-4o</option>
+                  <option>gpt-4o-mini</option>
+                  <option>claude-3-7-sonnet</option>
+                  <option>gemini-2.5-pro</option>
+                  <option>deepseek-v3</option>
+                </select>
+                <button class="button tiny">清空</button>
+              </div>
+            </div>
+
+            <div class="chat-messages">
+              <div class="chat-msg assistant">
+                <span class="chat-msg-role">助手</span>
+                <div class="chat-bubble">你好！我是 EASTCREA 智能助手。今天有什么可以帮助你的？</div>
+              </div>
+              <div class="chat-msg user">
+                <span class="chat-msg-role">你</span>
+                <div class="chat-bubble">帮我分析一下上周团队的 AI 模型使用情况，特别是哪些场景用了哪些模型。</div>
+              </div>
+              <div class="chat-msg assistant">
+                <span class="chat-msg-role">助手</span>
+                <div class="chat-bubble">根据上周的使用日志，以下是团队的模型使用分布：
+
+1. GPT-4o（占比 42%）— 主要用于生产力场景，如邮件起草、文档整理、会议总结等
+2. Claude 3.7 Sonnet（占比 31%）— 集中在长文写作与深度分析任务
+3. Gemini 2.5 Pro（占比 17%）— 处理多模态需求，含图片分析与代码审查
+4. Qwen Max（占比 10%）— 中文内容生成，包括本地化文案
+
+建议关注 GPT-4o 与 Claude 的成本比例，两者合计占总用量的 73%，有较大优化空间。</div>
+              </div>
+            </div>
+
+            <div class="chat-input-bar">
+              <textarea placeholder="输入消息，Enter 发送，Shift+Enter 换行…" rows="1"></textarea>
+              <button class="chat-send-btn">
+                <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>EASTCREA</strong>更体面的团队智能工作前台。</div>
+    <div><a href="../../user-agreement/index.html">用户协议</a> &nbsp;·&nbsp; <a href="../../privacy-policy/index.html">隐私政策</a></div>
+  </footer>
+
+</div>
+<script src="../../app.js" defer></script>
+</body>
+</html>

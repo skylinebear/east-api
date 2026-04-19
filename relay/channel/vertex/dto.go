@@ -3,7 +3,7 @@ package vertex
 import (
 	"encoding/json"
 
-	"github.com/QuantumNous/new-api/dto"
+	"github.com/skylinebear/new-api/dto"
 )
 
 type VertexAIClaudeRequest struct {

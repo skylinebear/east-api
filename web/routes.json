@@ -1,0 +1,142 @@
+[
+  {
+    "route": "/",
+    "file": "index.html",
+    "title": "EASTCREA | 首页"
+  },
+  {
+    "route": "/pricing",
+    "file": "pricing/index.html",
+    "title": "EASTCREA | 模型广场"
+  },
+  {
+    "route": "/about",
+    "file": "about/index.html",
+    "title": "EASTCREA | 关于"
+  },
+  {
+    "route": "/docs",
+    "file": "docs/index.html",
+    "title": "EASTCREA | 文档"
+  },
+  {
+    "route": "/login",
+    "file": "login/index.html",
+    "title": "EASTCREA | 登录"
+  },
+  {
+    "route": "/reset",
+    "file": "reset/index.html",
+    "title": "EASTCREA | 重置密码"
+  },
+  {
+    "route": "/register",
+    "file": "register/index.html",
+    "title": "EASTCREA | 注册"
+  },
+  {
+    "route": "/user-agreement",
+    "file": "user-agreement/index.html",
+    "title": "EASTCREA | 用户协议"
+  },
+  {
+    "route": "/privacy-policy",
+    "file": "privacy-policy/index.html",
+    "title": "EASTCREA | 隐私政策"
+  },
+  {
+    "route": "/forbidden",
+    "file": "forbidden/index.html",
+    "title": "EASTCREA | 无权限"
+  },
+  {
+    "route": "/setup",
+    "file": "setup/index.html",
+    "title": "EASTCREA | 初始化"
+  },
+  {
+    "route": "/chat2link",
+    "file": "chat2link/index.html",
+    "title": "EASTCREA | 登录继续"
+  },
+  {
+    "route": "/console",
+    "file": "console/index.html",
+    "title": "EASTCREA | 控制台"
+  },
+  {
+    "route": "/console/playground",
+    "file": "console/playground/index.html",
+    "title": "EASTCREA | 操练场"
+  },
+  {
+    "route": "/console/chat",
+    "file": "console/chat/index.html",
+    "title": "EASTCREA | 聊天"
+  },
+  {
+    "route": "/console/token",
+    "file": "console/token/index.html",
+    "title": "EASTCREA | 令牌管理"
+  },
+  {
+    "route": "/console/log",
+    "file": "console/log/index.html",
+    "title": "EASTCREA | 使用日志"
+  },
+  {
+    "route": "/console/midjourney",
+    "file": "console/midjourney/index.html",
+    "title": "EASTCREA | 绘图日志"
+  },
+  {
+    "route": "/console/task",
+    "file": "console/task/index.html",
+    "title": "EASTCREA | 任务日志"
+  },
+  {
+    "route": "/console/topup",
+    "file": "console/topup/index.html",
+    "title": "EASTCREA | 钱包管理"
+  },
+  {
+    "route": "/console/personal",
+    "file": "console/personal/index.html",
+    "title": "EASTCREA | 个人设置"
+  },
+  {
+    "route": "/console/channel",
+    "file": "console/channel/index.html",
+    "title": "EASTCREA | 渠道管理"
+  },
+  {
+    "route": "/console/subscription",
+    "file": "console/subscription/index.html",
+    "title": "EASTCREA | 订阅管理"
+  },
+  {
+    "route": "/console/models",
+    "file": "console/models/index.html",
+    "title": "EASTCREA | 模型管理"
+  },
+  {
+    "route": "/console/deployment",
+    "file": "console/deployment/index.html",
+    "title": "EASTCREA | 模型部署"
+  },
+  {
+    "route": "/console/redemption",
+    "file": "console/redemption/index.html",
+    "title": "EASTCREA | 兑换码管理"
+  },
+  {
+    "route": "/console/user",
+    "file": "console/user/index.html",
+    "title": "EASTCREA | 用户管理"
+  },
+  {
+    "route": "/console/setting",
+    "file": "console/setting/index.html",
+    "title": "EASTCREA | 系统设置"
+  }
+]

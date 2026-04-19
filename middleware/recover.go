@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/QuantumNous/new-api/common"
 	"github.com/gin-gonic/gin"
+	"github.com/skylinebear/new-api/common"
 )
 
 func RelayPanicRecover() gin.HandlerFunc {
@@ -17,8 +17,8 @@ func RelayPanicRecover() gin.HandlerFunc {
 				common.SysLog(fmt.Sprintf("stacktrace from panic: %s", string(debug.Stack())))
 				c.JSON(http.StatusInternalServerError, gin.H{
 					"error": gin.H{
-						"message": fmt.Sprintf("Panic detected, error: %v. Please submit a issue here: https://github.com/Calcium-Ion/new-api", err),
-						"type":    "new_api_panic",
+						"message": fmt.Sprintf("Panic detected, error: %v. Please review the server logs or open an issue in your current repository.", err),
+						"type":    "eastcrea_panic",
 					},
 				})
 				c.Abort()

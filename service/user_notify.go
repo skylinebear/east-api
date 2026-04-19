@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/new-api/setting/system_setting"
 )
 
 func NotifyRootUser(t string, subject string, content string) {
@@ -138,7 +138,7 @@ func sendBarkNotify(barkURL string, data dto.Notify) error {
 			Key:    system_setting.WorkerValidKey,
 			Method: http.MethodGet,
 			Headers: map[string]string{
-				"User-Agent": "OneAPI-Bark-Notify/1.0",
+				"User-Agent": "EASTCREA-Bark-Notify/1.0",
 			},
 		}
 
@@ -166,7 +166,7 @@ func sendBarkNotify(barkURL string, data dto.Notify) error {
 		}
 
 		// 设置User-Agent
-		req.Header.Set("User-Agent", "OneAPI-Bark-Notify/1.0")
+		req.Header.Set("User-Agent", "EASTCREA-Bark-Notify/1.0")
 
 		// 发送请求
 		client := GetHttpClient()
@@ -231,7 +231,7 @@ func sendGotifyNotify(gotifyUrl string, gotifyToken string, priority int, data d
 			Method: http.MethodPost,
 			Headers: map[string]string{
 				"Content-Type": "application/json; charset=utf-8",
-				"User-Agent":   "OneAPI-Gotify-Notify/1.0",
+				"User-Agent":   "EASTCREA-Gotify-Notify/1.0",
 			},
 			Body: payloadBytes,
 		}

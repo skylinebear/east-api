@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/logger"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/setting/operation_setting"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/new-api/logger"
+	relaycommon "github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/new-api/setting/operation_setting"
 
 	"github.com/bytedance/gopkg/util/gopool"
 

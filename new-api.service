@@ -1,16 +1,16 @@
-# File path: /etc/systemd/system/new-api.service
+# File path: /etc/systemd/system/eastcrea.service
 # sudo systemctl daemon-reload
-# sudo systemctl start new-api
-# sudo systemctl enable new-api
-# sudo systemctl status new-api
+# sudo systemctl start eastcrea
+# sudo systemctl enable eastcrea
+# sudo systemctl status eastcrea
 [Unit]
-Description=One API Service
+Description=EASTCREA Service
 After=network.target
 
 [Service]
 User=ubuntu  # 注意修改用户名
-WorkingDirectory=/path/to/new-api  # 注意修改路径
-ExecStart=/path/to/new-api/new-api --port 3000 --log-dir /path/to/new-api/logs  # 注意修改路径和端口号
+WorkingDirectory=/path/to/eastcrea  # 注意修改路径
+ExecStart=/path/to/eastcrea/eastcrea --port 3000 --log-dir /path/to/eastcrea/logs  # 注意修改路径和端口号
 Restart=always
 RestartSec=5
 

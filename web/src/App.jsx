@@ -1,386 +1,78 @@
-/*
-Copyright (C) 2025 QuantumNous
+/* EASTCREA v4 — App Router */
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { AuthProvider } from './hooks/useAuth.jsx'
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
+// Public pages
+import Home from './pages/Home.jsx'
+import Login from './pages/Login.jsx'
+import Register from './pages/Register.jsx'
+import Reset from './pages/Reset.jsx'
+import Setup from './pages/Setup.jsx'
+import Pricing from './pages/Pricing.jsx'
+import About from './pages/About.jsx'
+import Docs from './pages/Docs.jsx'
+import NotFound from './pages/NotFound.jsx'
+import { UserAgreement, PrivacyPolicy } from './pages/Legal.jsx'
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU Affero General Public License for more details.
+// Console pages
+import Dashboard from './pages/console/Dashboard.jsx'
+import Token from './pages/console/Token.jsx'
+import Log from './pages/console/Log.jsx'
+import Personal from './pages/console/Personal.jsx'
+import Topup from './pages/console/Topup.jsx'
+import Playground from './pages/console/Playground.jsx'
+import Chat from './pages/console/Chat.jsx'
+import MidJourney from './pages/console/MidJourney.jsx'
+import Task from './pages/console/Task.jsx'
+import Subscription from './pages/console/Subscription.jsx'
 
-You should have received a copy of the GNU Affero General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
+// Admin pages
+import Channel from './pages/console/Channel.jsx'
+import User from './pages/console/User.jsx'
+import Setting from './pages/console/Setting.jsx'
+import Models from './pages/console/Models.jsx'
+import Redemption from './pages/console/Redemption.jsx'
 
-For commercial licensing, please contact support@quantumnous.com
-*/
-
-import React, { lazy, Suspense, useContext, useMemo } from 'react';
-import { Route, Routes, useLocation, useParams } from 'react-router-dom';
-import Loading from './components/common/ui/Loading';
-import User from './pages/User';
-import { AuthRedirect, PrivateRoute, AdminRoute } from './helpers';
-import RegisterForm from './components/auth/RegisterForm';
-import LoginForm from './components/auth/LoginForm';
-import NotFound from './pages/NotFound';
-import Forbidden from './pages/Forbidden';
-import Setting from './pages/Setting';
-import { StatusContext } from './context/Status';
-
-import PasswordResetForm from './components/auth/PasswordResetForm';
-import PasswordResetConfirm from './components/auth/PasswordResetConfirm';
-import Channel from './pages/Channel';
-import Token from './pages/Token';
-import Redemption from './pages/Redemption';
-import TopUp from './pages/TopUp';
-import Log from './pages/Log';
-import Chat from './pages/Chat';
-import Chat2Link from './pages/Chat2Link';
-import Midjourney from './pages/Midjourney';
-import Pricing from './pages/Pricing';
-import Task from './pages/Task';
-import ModelPage from './pages/Model';
-import ModelDeploymentPage from './pages/ModelDeployment';
-import Playground from './pages/Playground';
-import Subscription from './pages/Subscription';
-import OAuth2Callback from './components/auth/OAuth2Callback';
-import PersonalSetting from './components/settings/PersonalSetting';
-import Setup from './pages/Setup';
-import SetupCheck from './components/layout/SetupCheck';
-
-const Home = lazy(() => import('./pages/Home'));
-const Dashboard = lazy(() => import('./pages/Dashboard'));
-const About = lazy(() => import('./pages/About'));
-const UserAgreement = lazy(() => import('./pages/UserAgreement'));
-const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
-
-function DynamicOAuth2Callback() {
-  const { provider } = useParams();
-  return <OAuth2Callback type={provider} />;
-}
-
-function App() {
-  const location = useLocation();
-  const [statusState] = useContext(StatusContext);
-
-  // 获取模型广场权限配置
-  const pricingRequireAuth = useMemo(() => {
-    const headerNavModulesConfig = statusState?.status?.HeaderNavModules;
-    if (headerNavModulesConfig) {
-      try {
-        const modules = JSON.parse(headerNavModulesConfig);
-
-        // 处理向后兼容性：如果pricing是boolean，默认不需要登录
-        if (typeof modules.pricing === 'boolean') {
-          return false; // 默认不需要登录鉴权
-        }
-
-        // 如果是对象格式，使用requireAuth配置
-        return modules.pricing?.requireAuth === true;
-      } catch (error) {
-        console.error('解析顶栏模块配置失败:', error);
-        return false; // 默认不需要登录
-      }
-    }
-    return false; // 默认不需要登录
-  }, [statusState?.status?.HeaderNavModules]);
-
+export default function App() {
   return (
-    <SetupCheck>
-      <Routes>
-        <Route
-          path='/'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <Home />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/setup'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <Setup />
-            </Suspense>
-          }
-        />
-        <Route path='/forbidden' element={<Forbidden />} />
-        <Route
-          path='/console/models'
-          element={
-            <AdminRoute>
-              <ModelPage />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/console/deployment'
-          element={
-            <AdminRoute>
-              <ModelDeploymentPage />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/console/subscription'
-          element={
-            <AdminRoute>
-              <Subscription />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/console/channel'
-          element={
-            <AdminRoute>
-              <Channel />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/console/token'
-          element={
-            <PrivateRoute>
-              <Token />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console/playground'
-          element={
-            <PrivateRoute>
-              <Playground />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console/redemption'
-          element={
-            <AdminRoute>
-              <Redemption />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/console/user'
-          element={
-            <AdminRoute>
-              <User />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/user/reset'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <PasswordResetConfirm />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/login'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <AuthRedirect>
-                <LoginForm />
-              </AuthRedirect>
-            </Suspense>
-          }
-        />
-        <Route
-          path='/register'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <AuthRedirect>
-                <RegisterForm />
-              </AuthRedirect>
-            </Suspense>
-          }
-        />
-        <Route
-          path='/reset'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <PasswordResetForm />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/oauth/github'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <OAuth2Callback type='github'></OAuth2Callback>
-            </Suspense>
-          }
-        />
-        <Route
-          path='/oauth/discord'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <OAuth2Callback type='discord'></OAuth2Callback>
-            </Suspense>
-          }
-        />
-        <Route
-          path='/oauth/oidc'
-          element={
-            <Suspense fallback={<Loading></Loading>}>
-              <OAuth2Callback type='oidc'></OAuth2Callback>
-            </Suspense>
-          }
-        />
-        <Route
-          path='/oauth/linuxdo'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <OAuth2Callback type='linuxdo'></OAuth2Callback>
-            </Suspense>
-          }
-        />
-        <Route
-          path='/oauth/:provider'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <DynamicOAuth2Callback />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/console/setting'
-          element={
-            <AdminRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <Setting />
-              </Suspense>
-            </AdminRoute>
-          }
-        />
-        <Route
-          path='/console/personal'
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <PersonalSetting />
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console/topup'
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <TopUp />
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console/log'
-          element={
-            <PrivateRoute>
-              <Log />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console'
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <Dashboard />
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console/midjourney'
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <Midjourney />
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/console/task'
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <Task />
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path='/pricing'
-          element={
-            pricingRequireAuth ? (
-              <PrivateRoute>
-                <Suspense
-                  fallback={<Loading></Loading>}
-                  key={location.pathname}
-                >
-                  <Pricing />
-                </Suspense>
-              </PrivateRoute>
-            ) : (
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <Pricing />
-              </Suspense>
-            )
-          }
-        />
-        <Route
-          path='/about'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <About />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/user-agreement'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <UserAgreement />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/privacy-policy'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <PrivacyPolicy />
-            </Suspense>
-          }
-        />
-        <Route
-          path='/console/chat/:id?'
-          element={
-            <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-              <Chat />
-            </Suspense>
-          }
-        />
-        {/* 方便使用chat2link直接跳转聊天... */}
-        <Route
-          path='/chat2link'
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
-                <Chat2Link />
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
-    </SetupCheck>
-  );
-}
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          {/* Public */}
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/reset" element={<Reset />} />
+          <Route path="/setup" element={<Setup />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/user-agreement" element={<UserAgreement />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-export default App;
+          {/* Console – User */}
+          <Route path="/console" element={<Dashboard />} />
+          <Route path="/console/token" element={<Token />} />
+          <Route path="/console/log" element={<Log />} />
+          <Route path="/console/personal" element={<Personal />} />
+          <Route path="/console/topup" element={<Topup />} />
+          <Route path="/console/playground" element={<Playground />} />
+          <Route path="/console/chat" element={<Chat />} />
+          <Route path="/console/midjourney" element={<MidJourney />} />
+          <Route path="/console/task" element={<Task />} />
+          <Route path="/console/subscription" element={<Subscription />} />
+
+          {/* Console – Admin */}
+          <Route path="/console/channel" element={<Channel />} />
+          <Route path="/console/user" element={<User />} />
+          <Route path="/console/setting" element={<Setting />} />
+          <Route path="/console/models" element={<Models />} />
+          <Route path="/console/redemption" element={<Redemption />} />
+
+          {/* 404 */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
+  )
+}

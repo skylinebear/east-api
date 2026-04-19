@@ -12,24 +12,24 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/relay/channel"
-	"github.com/QuantumNous/new-api/relay/channel/ai360"
-	"github.com/QuantumNous/new-api/relay/channel/lingyiwanwu"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/new-api/logger"
+	"github.com/skylinebear/new-api/relay/channel"
+	"github.com/skylinebear/new-api/relay/channel/ai360"
+	"github.com/skylinebear/new-api/relay/channel/lingyiwanwu"
 
-	//"github.com/QuantumNous/new-api/relay/channel/minimax"
-	"github.com/QuantumNous/new-api/relay/channel/openrouter"
-	"github.com/QuantumNous/new-api/relay/channel/xinference"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/relay/common_handler"
-	relayconstant "github.com/QuantumNous/new-api/relay/constant"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting/model_setting"
-	"github.com/QuantumNous/new-api/types"
+	//"github.com/skylinebear/new-api/relay/channel/minimax"
 	"github.com/samber/lo"
+	"github.com/skylinebear/new-api/relay/channel/openrouter"
+	"github.com/skylinebear/new-api/relay/channel/xinference"
+	relaycommon "github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/new-api/relay/common_handler"
+	relayconstant "github.com/skylinebear/new-api/relay/constant"
+	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/new-api/setting/model_setting"
+	"github.com/skylinebear/new-api/types"
 
 	"github.com/gin-gonic/gin"
 )
@@ -234,7 +234,7 @@ func (a *Adaptor) SetupRequestHeader(c *gin.Context, header *http.Header, info *
 			header.Set("HTTP-Referer", "https://www.newapi.ai")
 		}
 		if header.Get("X-OpenRouter-Title") == "" {
-			header.Set("X-OpenRouter-Title", "New API")
+			header.Set("X-OpenRouter-Title", "EASTCREA")
 		}
 	}
 	return nil

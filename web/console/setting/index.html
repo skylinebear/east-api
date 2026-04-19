@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EASTCREA | 系统设置</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="site-header">
+    <a class="header-brand" href="../../index.html">
+      <img src="../../assets/logo.png" alt="EASTCREA" />
+      <strong>EASTCREA</strong>
+    </a>
+    <div class="header-main">
+      <nav class="header-nav">
+        <a href="../../index.html">首页</a>
+        <a class="active" href="../index.html">控制台</a>
+        <a href="../../pricing/index.html">模型广场</a>
+        <a href="../../docs/index.html">文档</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-button user-pill" href="../personal/index.html">
+          <span class="avatar-dot"></span><strong>张明辉</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="console-wrap">
+    <aside class="console-sidebar">
+      <div class="sidebar-card">
+        <span class="mini-label">Console</span>
+        <div class="menu-section">
+          <div class="menu-section-title">工作区</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../index.html">数据看板</a>
+            <a class="menu-link" href="../playground/index.html">操练场</a>
+            <a class="menu-link" href="../chat/index.html">聊天</a>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-section-title">账户中心</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../token/index.html">令牌管理</a>
+            <a class="menu-link" href="../log/index.html">使用日志</a>
+            <a class="menu-link" href="../midjourney/index.html">绘图日志</a>
+            <a class="menu-link" href="../task/index.html">任务日志</a>
+            <a class="menu-link" href="../topup/index.html">钱包管理</a>
+            <a class="menu-link" href="../personal/index.html">个人设置</a>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-section-title">管理后台</div>
+          <div class="menu-list">
+            <a class="menu-link" href="../channel/index.html">渠道管理</a>
+            <a class="menu-link" href="../subscription/index.html">订阅管理</a>
+            <a class="menu-link" href="../models/index.html">模型管理</a>
+            <a class="menu-link" href="../deployment/index.html">模型部署</a>
+            <a class="menu-link" href="../redemption/index.html">兑换码管理</a>
+            <a class="menu-link" href="../user/index.html">用户管理</a>
+            <a class="menu-link active" href="index.html">系统设置</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="console-main">
+      <div class="topbar-card">
+        <div class="crumbs compact">
+          <span class="mini-label">Console / 管理后台 / 系统设置</span>
+          <h1>系统设置</h1>
+          <span class="workspace-title">配置平台运营参数、模型定价、支付渠道与全局行为。</span>
+        </div>
+        <div class="button-row">
+          <a class="button tiny" href="../index.html">返回看板</a>
+          <button class="button tiny primary" onclick="alert('所有设置已保存')">保存全部</button>
+        </div>
+      </div>
+
+      <div class="console-content">
+        <section class="page-hero">
+          <span class="eyebrow">System Configuration</span>
+          <h2>系统设置</h2>
+          <p>在此配置平台的运营参数、聊天与绘图行为、支付渠道、模型定价分组、性能优化参数以及第三方集成。所有更改实时生效。</p>
+        </section>
+
+        <div class="setting-grid">
+          <nav class="setting-nav">
+            <button data-target="ops">运营设置</button>
+            <button data-target="chat">聊天设置</button>
+            <button data-target="draw">绘图设置</button>
+            <button data-target="pay">支付设置</button>
+            <button data-target="pricing">分组与定价</button>
+            <button data-target="perf">性能设置</button>
+            <button data-target="other">其他设置</button>
+          </nav>
+
+          <div>
+            <!-- 运营设置 -->
+            <div data-setting-panel="ops">
+              <article class="panel">
+                <span class="mini-label">Operations</span>
+                <h2 class="panel-title">运营设置</h2>
+                <div class="form-stack">
+                  <div class="form-grid">
+                    <div class="field"><label>站点名称</label><input value="EASTCREA" /></div>
+                    <div class="field"><label>站点副标题</label><input value="真实才是性价比" /></div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>站点 URL</label><input value="https://eastcrea.com" /></div>
+                    <div class="field"><label>默认语言</label><select><option>中文</option><option>English</option></select></div>
+                  </div>
+                  <div class="field">
+                    <label>首页公告</label>
+                    <textarea rows="2">欢迎使用 EASTCREA，当前工作台已完成新版前端设计，欢迎体验。</textarea>
+                  </div>
+                  <div class="field">
+                    <label>前台文档地址</label><input value="/docs" />
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid var(--line)">
+                    <div><strong>开放注册</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">关闭后仅管理员可创建账户</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px solid var(--line)">
+                    <div><strong>邮箱验证注册</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">注册时需验证邮箱，防止垃圾账号</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>新用户赠送额度（Token）</label><input type="number" value="100000" /></div>
+                    <div class="field"><label>初始用户分组</label><select><option>default</option><option>vip</option><option>free</option></select></div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>充值链路说明</label><textarea rows="2">支持人工确认、Stripe 与企业账单等多种方式。</textarea></div>
+                    <div class="field"><label>管理员邮箱</label><input type="email" value="admin@eastcrea.com" /></div>
+                  </div>
+                </div>
+                <div class="button-row" style="margin-top:8px">
+                  <button class="button primary" onclick="alert('运营设置已保存')">保存运营设置</button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 聊天设置 -->
+            <div data-setting-panel="chat" hidden>
+              <article class="panel">
+                <span class="mini-label">Chat</span>
+                <h2 class="panel-title">聊天设置</h2>
+                <div class="form-stack">
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>启用聊天功能</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">向用户开放 Web 聊天界面入口</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>保存聊天记录</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">将用户对话历史持久化到数据库</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>流式输出（SSE）</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">使用 Server-Sent Events 逐字输出响应</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>默认聊天模型</label><select><option>gpt-4o</option><option>gpt-4o-mini</option><option>claude-3-7-sonnet</option><option>gemini-2.5-pro</option></select></div>
+                    <div class="field"><label>最大历史轮数</label><input type="number" value="20" /></div>
+                  </div>
+                  <div class="field">
+                    <label>默认 System Prompt</label>
+                    <textarea rows="3">你是 EASTCREA 智能助手，请用简洁、专业的中文回答用户问题。</textarea>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>单次最大 Token</label><input type="number" value="4096" /></div>
+                    <div class="field"><label>记录保留天数</label><input type="number" value="90" /></div>
+                  </div>
+                </div>
+                <div class="button-row" style="margin-top:8px">
+                  <button class="button primary" onclick="alert('聊天设置已保存')">保存聊天设置</button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 绘图设置 -->
+            <div data-setting-panel="draw" hidden>
+              <article class="panel">
+                <span class="mini-label">Image Generation</span>
+                <h2 class="panel-title">绘图设置</h2>
+                <div class="form-stack">
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>启用绘图功能</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">向用户开放图像生成模型调用入口</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>默认绘图模型</label><select><option>dall-e-3</option><option>dall-e-2</option><option>midjourney</option><option>flux-1.1-pro</option></select></div>
+                    <div class="field"><label>默认图像尺寸</label><select><option>1024×1024</option><option>1792×1024</option><option>1024×1792</option></select></div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>图像存储方式</label><select><option>本地存储</option><option>阿里云 OSS</option><option>腾讯云 COS</option><option>AWS S3</option></select></div>
+                    <div class="field"><label>图像保留天数</label><input type="number" value="30" /></div>
+                  </div>
+                  <div class="field"><label>存储桶地址</label><input placeholder="https://your-bucket.oss-cn-shanghai.aliyuncs.com" /></div>
+                  <div class="form-grid">
+                    <div class="field"><label>Access Key ID</label><input type="password" placeholder="••••••••••••••••" /></div>
+                    <div class="field"><label>Access Key Secret</label><input type="password" placeholder="••••••••••••••••" /></div>
+                  </div>
+                </div>
+                <div class="button-row" style="margin-top:8px">
+                  <button class="button primary" onclick="alert('绘图设置已保存')">保存绘图设置</button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 支付设置 -->
+            <div data-setting-panel="pay" hidden>
+              <article class="panel">
+                <span class="mini-label">Payment</span>
+                <h2 class="panel-title">支付设置</h2>
+                <div class="form-stack">
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>启用充值功能</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">向用户开放在线充值入口</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <h3 style="font-size:15px;font-weight:600;margin:4px 0">支付宝配置</h3>
+                  <div class="form-grid">
+                    <div class="field"><label>App ID</label><input value="2021001xxxxxxxxxxxxx" /></div>
+                    <div class="field"><label>商户私钥</label><input type="password" placeholder="••••••••••••••••" /></div>
+                  </div>
+                  <div class="field"><label>支付宝公钥</label><textarea rows="2" placeholder="MIIBIjANBgkqhkiG9w0BAQ..."></textarea></div>
+                  <div class="field"><label>回调地址 (Notify URL)</label><input value="https://eastcrea.com/api/pay/alipay/notify" /></div>
+                  <h3 style="font-size:15px;font-weight:600;margin:8px 0 4px">微信支付配置</h3>
+                  <div class="form-grid">
+                    <div class="field"><label>商户号 (MCH ID)</label><input placeholder="1600000000" /></div>
+                    <div class="field"><label>API 密钥 V3</label><input type="password" placeholder="••••••••••••••••" /></div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>最低充值金额（¥）</label><input type="number" value="10" /></div>
+                    <div class="field"><label>最高单笔充值金额（¥）</label><input type="number" value="5000" /></div>
+                  </div>
+                </div>
+                <div class="button-row" style="margin-top:8px">
+                  <button class="button primary" onclick="alert('支付设置已保存')">保存支付设置</button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 分组与定价 -->
+            <div data-setting-panel="pricing" hidden>
+              <article class="panel">
+                <span class="mini-label">Groups &amp; Pricing</span>
+                <h2 class="panel-title">分组与模型定价</h2>
+                <div class="notice" style="margin-bottom:18px">模型价格以 <strong>1K Token</strong> 为计费单位。倍率 = 实际售价 / 标准参考价。</div>
+                <div class="toolbar-bar" style="margin-bottom:12px">
+                  <div class="toolbar-group" data-filter-group="#pricing-tbody">
+                    <span class="toolbar-chip active" data-filter="all">全部分组</span>
+                    <span class="toolbar-chip" data-filter="default">default</span>
+                    <span class="toolbar-chip" data-filter="vip">vip</span>
+                    <span class="toolbar-chip" data-filter="free">free</span>
+                  </div>
+                  <button class="button tiny primary" data-open-modal="modal-add-pricing">+ 添加定价</button>
+                </div>
+                <div class="table-panel">
+                  <table>
+                    <thead><tr><th>模型</th><th>分组</th><th>输入（¥/1K）</th><th>输出（¥/1K）</th><th>倍率</th><th>操作</th></tr></thead>
+                    <tbody id="pricing-tbody">
+                      <tr data-filter="default"><td><strong>gpt-4o</strong></td><td><span class="badge">default</span></td><td>¥0.035</td><td>¥0.105</td><td>1.0×</td><td><button class="button tiny">编辑</button></td></tr>
+                      <tr data-filter="vip"><td><strong>gpt-4o</strong></td><td><span class="badge blue">vip</span></td><td>¥0.028</td><td>¥0.084</td><td>0.8×</td><td><button class="button tiny">编辑</button></td></tr>
+                      <tr data-filter="default"><td><strong>gpt-4o-mini</strong></td><td><span class="badge">default</span></td><td>¥0.004</td><td>¥0.016</td><td>1.0×</td><td><button class="button tiny">编辑</button></td></tr>
+                      <tr data-filter="free"><td><strong>gpt-4o-mini</strong></td><td><span class="badge warn">free</span></td><td>¥0.006</td><td>¥0.024</td><td>1.5×</td><td><button class="button tiny">编辑</button></td></tr>
+                      <tr data-filter="default"><td><strong>claude-3-7-sonnet</strong></td><td><span class="badge">default</span></td><td>¥0.021</td><td>¥0.105</td><td>1.0×</td><td><button class="button tiny">编辑</button></td></tr>
+                      <tr data-filter="vip"><td><strong>claude-3-7-sonnet</strong></td><td><span class="badge blue">vip</span></td><td>¥0.016</td><td>¥0.080</td><td>0.75×</td><td><button class="button tiny">编辑</button></td></tr>
+                      <tr data-filter="default"><td><strong>deepseek-v3</strong></td><td><span class="badge">default</span></td><td>¥0.002</td><td>¥0.008</td><td>1.0×</td><td><button class="button tiny">编辑</button></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+
+            <!-- 性能设置 -->
+            <div data-setting-panel="perf" hidden>
+              <article class="panel">
+                <span class="mini-label">Performance</span>
+                <h2 class="panel-title">性能设置</h2>
+                <div class="form-stack">
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>启用请求缓存</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">对相同请求启用语义缓存，减少 Token 消耗</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>渠道负载均衡</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">按权重将请求分发到多个同类渠道</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>自动故障转移</strong><p style="font-size:14px;color:var(--ink-faint);margin-top:2px">主渠道失败时自动切换到备用渠道</p></div>
+                    <label class="toggle-switch"><input type="checkbox" checked /><span class="toggle-track"></span></label>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>全局请求超时（秒）</label><input type="number" value="120" /></div>
+                    <div class="field"><label>健康检测间隔（秒）</label><input type="number" value="60" /></div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>单用户并发上限</label><input type="number" value="10" /></div>
+                    <div class="field"><label>全局 QPS 限制</label><input type="number" value="500" /></div>
+                  </div>
+                  <div class="field"><label>Redis 连接地址</label><input value="redis://127.0.0.1:6379/0" /></div>
+                </div>
+                <div class="button-row" style="margin-top:8px">
+                  <button class="button primary" onclick="alert('性能设置已保存')">保存性能设置</button>
+                </div>
+              </article>
+            </div>
+
+            <!-- 其他设置 -->
+            <div data-setting-panel="other" hidden>
+              <article class="panel">
+                <span class="mini-label">Other</span>
+                <h2 class="panel-title">其他设置</h2>
+                <div class="form-stack">
+                  <h3 style="font-size:15px;font-weight:600;margin:0">SMTP 邮件服务</h3>
+                  <div class="form-grid">
+                    <div class="field"><label>SMTP 服务器</label><input value="smtp.exmail.qq.com" /></div>
+                    <div class="field"><label>端口</label><input type="number" value="465" /></div>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>发件人邮箱</label><input type="email" value="noreply@eastcrea.com" /></div>
+                    <div class="field"><label>SMTP 密码</label><input type="password" placeholder="••••••••••••••••" /></div>
+                  </div>
+                  <div><button class="button tiny" onclick="alert('测试邮件已发送至管理员邮箱')">发送测试邮件</button></div>
+
+                  <h3 style="font-size:15px;font-weight:600;margin:8px 0 0">GitHub OAuth 登录</h3>
+                  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)">
+                    <div><strong>启用 GitHub 登录</strong></div>
+                    <label class="toggle-switch"><input type="checkbox" /><span class="toggle-track"></span></label>
+                  </div>
+                  <div class="form-grid">
+                    <div class="field"><label>Client ID</label><input placeholder="Ov23li..." /></div>
+                    <div class="field"><label>Client Secret</label><input type="password" placeholder="••••••••••••••••" /></div>
+                  </div>
+
+                  <h3 style="font-size:15px;font-weight:600;margin:8px 0 0">危险操作</h3>
+                  <div class="notice warn">以下操作不可逆，执行前请确认已做备份。</div>
+                  <div style="display:flex;gap:10px">
+                    <button class="button tiny warn" onclick="if(confirm('确认清空所有使用日志？'))alert('日志清空队列已提交')">清空使用日志</button>
+                    <button class="button tiny danger" onclick="if(confirm('确认重置系统设置为默认值？'))alert('系统设置已重置')">重置系统设置</button>
+                  </div>
+                </div>
+                <div class="button-row" style="margin-top:8px">
+                  <button class="button primary" onclick="alert('其他设置已保存')">保存其他设置</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Add Pricing Modal -->
+  <div class="modal-backdrop" id="modal-add-pricing">
+    <div class="modal-box">
+      <div class="modal-header"><h2>添加模型定价</h2><button class="modal-close">✕</button></div>
+      <div class="form-stack">
+        <div class="form-grid">
+          <div class="field"><label>模型名称</label><input placeholder="gpt-4o" /></div>
+          <div class="field"><label>用户分组</label><select><option>default</option><option>vip</option><option>free</option></select></div>
+        </div>
+        <div class="form-grid">
+          <div class="field"><label>输入价格（¥/1K）</label><input type="number" step="0.001" placeholder="0.035" /></div>
+          <div class="field"><label>输出价格（¥/1K）</label><input type="number" step="0.001" placeholder="0.105" /></div>
+        </div>
+        <div class="field"><label>倍率</label><input type="number" step="0.05" value="1.0" /></div>
+      </div>
+      <div class="modal-footer">
+        <button class="button" data-close-modal>取消</button>
+        <button class="button primary" onclick="alert('定价已添加')">确认添加</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div><strong>EASTCREA</strong>更体面的团队智能工作前台。</div>
+    <div><a href="../../user-agreement/index.html">用户协议</a> &nbsp;·&nbsp; <a href="../../privacy-policy/index.html">隐私政策</a></div>
+  </footer>
+
+</div>
+<script src="../../app.js" defer></script>
+</body>
+</html>

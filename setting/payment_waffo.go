@@ -1,8 +1,8 @@
 package setting
 
 import (
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
+	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/new-api/constant"
 )
 
 var (

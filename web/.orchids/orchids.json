@@ -1,0 +1,7 @@
+{
+  "projectId": "92cc4ca1-3dec-4900-a0f8-b7efad2a1dd6",
+  "createdAt": 1776531052871,
+  "version": "1.0",
+  "startupCommands": ["npm install; npm run dev"],
+  "templateId": "vite-react"
+}
