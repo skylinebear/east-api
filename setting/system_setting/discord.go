@@ -1,6 +1,6 @@
 package system_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 type DiscordSettings struct {
 	Enabled      bool   `json:"enabled"`

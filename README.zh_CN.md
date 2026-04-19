@@ -15,26 +15,26 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/skylinebear/new-api/main/LICENSE">
-    <img src="https://img.shields.io/github/license/skylinebear/new-api?color=brightgreen" alt="license">
+  <a href="https://raw.githubusercontent.com/skylinebear/east-api/main/LICENSE">
+    <img src="https://img.shields.io/github/license/skylinebear/east-api?color=brightgreen" alt="license">
   </a><!--
-  --><a href="https://github.com/skylinebear/new-api/releases/latest">
-    <img src="https://img.shields.io/github/v/release/skylinebear/new-api?color=brightgreen&include_prereleases" alt="release">
+  --><a href="https://github.com/skylinebear/east-api/releases/latest">
+    <img src="https://img.shields.io/github/v/release/skylinebear/east-api?color=brightgreen&include_prereleases" alt="release">
   </a><!--
-  --><a href="https://github.com/skylinebear/new-api">
+  --><a href="https://github.com/skylinebear/east-api">
     <img src="https://img.shields.io/badge/docker-dockerHub-blue" alt="docker">
   </a><!--
-  --><a href="https://goreportcard.com/report/github.com/skylinebear/new-api">
-    <img src="https://goreportcard.com/badge/github.com/skylinebear/new-api" alt="GoReportCard">
+  --><a href="https://goreportcard.com/report/github.com/skylinebear/east-api">
+    <img src="https://goreportcard.com/badge/github.com/skylinebear/east-api" alt="GoReportCard">
   </a>
 </p>
 
 <p align="center">
   <a href="https://trendshift.io/repositories/20180" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/20180" alt="skylinebear%2Fnew-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+    <img src="https://trendshift.io/api/badge/repositories/20180" alt="skylinebear%2Feast-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
   </a>
   <br>
-  <a href="https://hellogithub.com/repository/skylinebear/new-api" target="_blank">
+  <a href="https://hellogithub.com/repository/skylinebear/east-api" target="_blank">
     <img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=539ac4217e69431684ad4a0bab768811&claim_uid=tbFPfKIDHpc4TzR" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
   </a><!--
   --><a href="https://www.producthunt.com/products/new-api/launches/new-api?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-new-api" target="_blank" rel="noopener noreferrer">
@@ -110,8 +110,8 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/skylinebear/new-api.git
-cd new-api
+git clone https://github.com/skylinebear/east-api.git
+cd east-api
 
 # 编辑 docker-compose.yml 配置
 nano docker-compose.yml
@@ -151,7 +151,7 @@ docker run --name new-api -d --restart always \
 
 🎉 部署完成后，访问 `http://localhost:3000` 即可使用！
 
-📖 更多部署方式请参考 [部署指南](https://github.com/skylinebear/new-api/tree/main/docs)
+📖 更多部署方式请参考 [部署指南](https://github.com/skylinebear/east-api/tree/main/docs)
 
 ---
 
@@ -159,7 +159,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [官方文档](https://github.com/skylinebear/new-api/tree/main/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://github.com/skylinebear/new-api)
+### 📖 [官方文档](https://github.com/skylinebear/east-api/tree/main/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://github.com/skylinebear/east-api)
 
 </div>
 
@@ -167,17 +167,17 @@ docker run --name new-api -d --restart always \
 
 | 分类 | 链接 |
 |------|------|
-| 🚀 部署指南 | [安装文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| ⚙️ 环境配置 | [环境变量](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 📡 接口文档 | [API 文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| ❓ 常见问题 | [FAQ](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 💬 社区交流 | [交流渠道](https://github.com/skylinebear/new-api/tree/main/docs) |
+| 🚀 部署指南 | [安装文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| ⚙️ 环境配置 | [环境变量](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 📡 接口文档 | [API 文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| ❓ 常见问题 | [FAQ](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 💬 社区交流 | [交流渠道](https://github.com/skylinebear/east-api/tree/main/docs) |
 
 ---
 
 ## ✨ 主要特性
 
-> 详细特性请参考 [特性说明](https://github.com/skylinebear/new-api/tree/main/docs)
+> 详细特性请参考 [特性说明](https://github.com/skylinebear/east-api/tree/main/docs)
 
 ### 🎨 核心功能
 
@@ -207,11 +207,11 @@ docker run --name new-api -d --restart always \
 ### 🚀 高级功能
 
 **API 格式支持：**
-- ⚡ [OpenAI Responses](https://github.com/skylinebear/new-api/tree/main/docs)
-- ⚡ [OpenAI Realtime API](https://github.com/skylinebear/new-api/tree/main/docs)（含 Azure）
-- ⚡ [Claude Messages](https://github.com/skylinebear/new-api/tree/main/docs)
-- ⚡ [Google Gemini](https://github.com/skylinebear/new-api/tree/main/docs)
-- 🔄 [Rerank 模型](https://github.com/skylinebear/new-api/tree/main/docs)（Cohere、Jina）
+- ⚡ [OpenAI Responses](https://github.com/skylinebear/east-api/tree/main/docs)
+- ⚡ [OpenAI Realtime API](https://github.com/skylinebear/east-api/tree/main/docs)（含 Azure）
+- ⚡ [Claude Messages](https://github.com/skylinebear/east-api/tree/main/docs)
+- ⚡ [Google Gemini](https://github.com/skylinebear/east-api/tree/main/docs)
+- 🔄 [Rerank 模型](https://github.com/skylinebear/east-api/tree/main/docs)（Cohere、Jina）
 
 **智能路由：**
 - ⚖️ 渠道加权随机
@@ -254,17 +254,17 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 模型支持
 
-> 详情请参考 [接口文档 - 中继接口](https://github.com/skylinebear/new-api/tree/main/docs)
+> 详情请参考 [接口文档 - 中继接口](https://github.com/skylinebear/east-api/tree/main/docs)
 
 | 模型类型 | 说明 | 文档 |
 |---------|------|------|
-| 🤖 OpenAI-Compatible | OpenAI 兼容模型 | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 🤖 OpenAI Responses | OpenAI Responses 格式 | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 🔄 Rerank | Cohere、Jina | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 💬 Claude | Messages 格式 | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 🌐 Gemini | Google Gemini 格式 | [文档](https://github.com/skylinebear/new-api/tree/main/docs) |
+| 🤖 OpenAI-Compatible | OpenAI 兼容模型 | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🤖 OpenAI Responses | OpenAI Responses 格式 | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🔄 Rerank | Cohere、Jina | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 💬 Claude | Messages 格式 | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🌐 Gemini | Google Gemini 格式 | [文档](https://github.com/skylinebear/east-api/tree/main/docs) |
 | 🔧 Dify | ChatFlow 模式 | - |
 | 🎯 自定义 | 支持完整调用地址 | - |
 
@@ -273,16 +273,16 @@ docker run --name new-api -d --restart always \
 <details>
 <summary>查看完整接口列表</summary>
 
-- [聊天接口 (Chat Completions)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [响应接口 (Responses)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [图像接口 (Image)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [音频接口 (Audio)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [视频接口 (Video)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [嵌入接口 (Embeddings)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [重排序接口 (Rerank)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [实时对话 (Realtime)](https://github.com/skylinebear/new-api/tree/main/docs)
-- [Claude 聊天](https://github.com/skylinebear/new-api/tree/main/docs)
-- [Google Gemini 聊天](https://github.com/skylinebear/new-api/tree/main/docs)
+- [聊天接口 (Chat Completions)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [响应接口 (Responses)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [图像接口 (Image)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [音频接口 (Audio)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [视频接口 (Video)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [嵌入接口 (Embeddings)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [重排序接口 (Rerank)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [实时对话 (Realtime)](https://github.com/skylinebear/east-api/tree/main/docs)
+- [Claude 聊天](https://github.com/skylinebear/east-api/tree/main/docs)
+- [Google Gemini 聊天](https://github.com/skylinebear/east-api/tree/main/docs)
 
 </details>
 
@@ -325,7 +325,7 @@ docker run --name new-api -d --restart always \
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block 采样率                               | `5` |
 | `HOSTNAME` | Pyroscope 标签里的主机名                                          | `new-api` |
 
-📖 **完整配置：** [环境变量文档](https://github.com/skylinebear/new-api/tree/main/docs)
+📖 **完整配置：** [环境变量文档](https://github.com/skylinebear/east-api/tree/main/docs)
 
 </details>
 
@@ -336,8 +336,8 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # 克隆项目
-git clone https://github.com/skylinebear/new-api.git
-cd new-api
+git clone https://github.com/skylinebear/east-api.git
+cd east-api
 
 # 编辑配置
 nano docker-compose.yml
@@ -419,7 +419,6 @@ docker run --name new-api -d --restart always \
 | 项目 | 说明 |
 |------|------|
 | [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool) | Key 额度查询工具 |
-| [new-api-horizon](https://github.com/skylinebear/new-api-horizon) | EASTCREA 高性能优化版 |
 
 ---
 
@@ -429,10 +428,10 @@ docker run --name new-api -d --restart always \
 
 | 资源 | 链接 |
 |------|------|
-| 📘 常见问题 | [FAQ](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 💬 社区交流 | [交流渠道](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 🐛 反馈问题 | [问题反馈](https://github.com/skylinebear/new-api/tree/main/docs) |
-| 📚 完整文档 | [官方文档](https://github.com/skylinebear/new-api/tree/main/docs) |
+| 📘 常见问题 | [FAQ](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 💬 社区交流 | [交流渠道](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🐛 反馈问题 | [问题反馈](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 📚 完整文档 | [官方文档](https://github.com/skylinebear/east-api/tree/main/docs) |
 
 ### 🤝 贡献指南
 
@@ -458,7 +457,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=skylinebear/new-api&type=Date)](https://star-history.com/#skylinebear/new-api&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=skylinebear/east-api&type=Date)](https://star-history.com/#skylinebear/east-api&Date)
 
 </div>
 
@@ -470,7 +469,7 @@ docker run --name new-api -d --restart always \
 
 如果这个项目对你有帮助，欢迎给我们一个 ⭐️ Star！
 
-**[官方文档](https://github.com/skylinebear/new-api/tree/main/docs)** • **[问题反馈](https://github.com/skylinebear/new-api/issues)** • **[最新发布](https://github.com/skylinebear/new-api/releases)**
+**[官方文档](https://github.com/skylinebear/east-api/tree/main/docs)** • **[问题反馈](https://github.com/skylinebear/east-api/issues)** • **[最新发布](https://github.com/skylinebear/east-api/releases)**
 
 <sub>Built with ❤️ by skylinebear</sub>
 

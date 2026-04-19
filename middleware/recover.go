@@ -6,7 +6,7 @@ import (
 	"runtime/debug"
 
 	"github.com/gin-gonic/gin"
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 )
 
 func RelayPanicRecover() gin.HandlerFunc {

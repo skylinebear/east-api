@@ -1,8 +1,8 @@
 package performance_setting
 
 import (
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting/config"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting/config"
 )
 
 // PerformanceSetting 性能设置配置

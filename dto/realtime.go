@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/skylinebear/new-api/types"
+import "github.com/skylinebear/east-api/types"
 
 const (
 	RealtimeEventTypeError              = "error"

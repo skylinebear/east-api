@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	passkeysvc "github.com/skylinebear/new-api/service/passkey"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	passkeysvc "github.com/skylinebear/east-api/service/passkey"
+	"github.com/skylinebear/east-api/setting/system_setting"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

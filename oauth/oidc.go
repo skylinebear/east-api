@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/i18n"
-	"github.com/skylinebear/new-api/logger"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/i18n"
+	"github.com/skylinebear/east-api/logger"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/setting/system_setting"
 	"github.com/gin-gonic/gin"
 )
 

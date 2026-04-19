@@ -1,6 +1,6 @@
 package operation_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 // CheckinSetting 签到功能配置
 type CheckinSetting struct {

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/relay/common"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/relay/common"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/setting/ratio_setting"
 	"github.com/gin-gonic/gin"
 )
 

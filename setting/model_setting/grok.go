@@ -1,6 +1,6 @@
 package model_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 // GrokSettings defines Grok model configuration.
 type GrokSettings struct {

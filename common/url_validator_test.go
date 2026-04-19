@@ -3,7 +3,7 @@ package common
 import (
 	"testing"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 )
 
 func TestValidateRedirectURL(t *testing.T) {

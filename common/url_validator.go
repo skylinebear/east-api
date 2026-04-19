@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 )
 
 // ValidateRedirectURL validates that a redirect URL is safe to use.

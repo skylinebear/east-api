@@ -1,6 +1,6 @@
 package system_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 type FetchSetting struct {
 	EnableSSRFProtection   bool     `json:"enable_ssrf_protection"` // 是否启用SSRF防护

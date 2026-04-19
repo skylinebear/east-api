@@ -4,7 +4,7 @@ import (
 	"database/sql/driver"
 	"encoding/json"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 
 	"gorm.io/gorm"
 )

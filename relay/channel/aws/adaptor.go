@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/relay/channel"
-	"github.com/skylinebear/new-api/relay/channel/claude"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/relay/channel"
+	"github.com/skylinebear/east-api/relay/channel/claude"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/types"
 	"github.com/aws/aws-sdk-go-v2/service/bedrockruntime"
 	"github.com/pkg/errors"
 

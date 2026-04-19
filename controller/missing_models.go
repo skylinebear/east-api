@@ -3,7 +3,7 @@ package controller
 import (
 	"net/http"
 
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/model"
 
 	"github.com/gin-gonic/gin"
 )

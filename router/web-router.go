@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/controller"
-	"github.com/skylinebear/new-api/middleware"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/controller"
+	"github.com/skylinebear/east-api/middleware"
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"

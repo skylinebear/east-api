@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/service/openaicompat"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/service/openaicompat"
 )
 
 func ChatCompletionsRequestToResponsesRequest(req *dto.GeneralOpenAIRequest) (*dto.OpenAIResponsesRequest, error) {

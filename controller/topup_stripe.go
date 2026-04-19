@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/setting"
-	"github.com/skylinebear/new-api/setting/operation_setting"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/setting"
+	"github.com/skylinebear/east-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/setting/system_setting"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stripe/stripe-go/v81"

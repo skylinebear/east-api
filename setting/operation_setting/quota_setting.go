@@ -1,6 +1,6 @@
 package operation_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 type QuotaSetting struct {
 	EnableFreeModelPreConsume bool `json:"enable_free_model_pre_consume"` // 是否对免费模型启用预消耗

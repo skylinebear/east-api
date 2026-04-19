@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/setting"
 
 	"github.com/gin-gonic/gin"
 )

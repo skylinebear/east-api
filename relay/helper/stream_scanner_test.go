@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skylinebear/new-api/constant"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/constant"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/setting/operation_setting"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
 	"github.com/samber/lo"
 )
 

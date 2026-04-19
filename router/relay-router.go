@@ -1,11 +1,11 @@
 package router
 
 import (
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/controller"
-	"github.com/skylinebear/new-api/middleware"
-	"github.com/skylinebear/new-api/relay"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/controller"
+	"github.com/skylinebear/east-api/middleware"
+	"github.com/skylinebear/east-api/relay"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

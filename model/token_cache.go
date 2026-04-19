@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
 )
 
 func cacheSetToken(token Token) error {

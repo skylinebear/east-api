@@ -3,9 +3,9 @@ package ratio_setting
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting/operation_setting"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/types"
 )
 
 // from songquanpeng/one-api

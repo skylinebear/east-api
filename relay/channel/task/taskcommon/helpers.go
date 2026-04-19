@@ -4,10 +4,10 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/setting/system_setting"
 	"github.com/gin-gonic/gin"
 )
 

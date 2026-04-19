@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting/ratio_setting"
 )
 
 func IsChannelEnabledForGroupModel(group string, modelName string, channelID int) bool {

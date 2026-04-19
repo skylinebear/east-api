@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/model"
 
 	webauthn "github.com/go-webauthn/webauthn/webauthn"
 )

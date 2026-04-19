@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/setting/operation_setting"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/types"
 	"github.com/gin-gonic/gin"
 )
 

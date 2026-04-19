@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/setting/config"
+	"github.com/skylinebear/east-api/setting/config"
 )
 
 //var claudeHeadersSettings = map[string][]string{}

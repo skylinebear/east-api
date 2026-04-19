@@ -3,10 +3,10 @@ package minimax
 import (
 	"fmt"
 
-	channelconstant "github.com/skylinebear/new-api/constant"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/types"
+	channelconstant "github.com/skylinebear/east-api/constant"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/types"
 )
 
 func GetRequestURL(info *relaycommon.RelayInfo) (string, error) {

@@ -1,8 +1,8 @@
 package setting
 
 import (
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
 )
 
 var (

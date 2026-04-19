@@ -3,7 +3,7 @@ package dto
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

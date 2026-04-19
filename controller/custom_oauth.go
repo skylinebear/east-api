@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/oauth"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/oauth"
 	"github.com/gin-gonic/gin"
 )
 

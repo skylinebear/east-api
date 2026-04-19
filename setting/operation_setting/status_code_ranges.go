@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/types"
 )
 
 type StatusCodeRange struct {

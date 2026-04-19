@@ -1,6 +1,6 @@
 package palm
 
-import "github.com/skylinebear/new-api/dto"
+import "github.com/skylinebear/east-api/dto"
 
 type PaLMChatMessage struct {
 	Author  string `json:"author"`

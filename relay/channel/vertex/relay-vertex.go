@@ -1,6 +1,6 @@
 package vertex
 
-import "github.com/skylinebear/new-api/common"
+import "github.com/skylinebear/east-api/common"
 
 func GetModelRegion(other string, localModelName string) string {
 	// if other is json string

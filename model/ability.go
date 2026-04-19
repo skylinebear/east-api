@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 
 	"github.com/samber/lo"
 	"gorm.io/gorm"

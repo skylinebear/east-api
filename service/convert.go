@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/relay/channel/openrouter"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/relay/reasonmap"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/relay/channel/openrouter"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/relay/reasonmap"
 	"github.com/samber/lo"
 )
 

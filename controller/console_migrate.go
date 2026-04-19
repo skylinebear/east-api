@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
 
 	"github.com/gin-gonic/gin"
 )

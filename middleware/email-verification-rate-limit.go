@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 
 	"github.com/gin-gonic/gin"
 )

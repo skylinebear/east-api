@@ -1,6 +1,6 @@
 package operation_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 // 额度展示类型
 const (

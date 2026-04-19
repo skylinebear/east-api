@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 )
 
 // ConfigManager 统一管理所有配置

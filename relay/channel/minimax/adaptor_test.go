@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skylinebear/new-api/dto"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
+	"github.com/skylinebear/east-api/dto"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
 
 	"github.com/gin-gonic/gin"
 )

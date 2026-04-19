@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/logger"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/logger"
 )
 
 type AwsClaudeRequest struct {

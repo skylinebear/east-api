@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
 	"github.com/gin-gonic/gin"
 	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"

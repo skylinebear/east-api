@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/dto"
 	"github.com/stretchr/testify/require"
 )
 

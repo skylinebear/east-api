@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/setting/console_setting"
+	"github.com/skylinebear/east-api/setting/console_setting"
 
 	"github.com/gin-gonic/gin"
 	"golang.org/x/sync/errgroup"

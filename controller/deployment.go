@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/pkg/ionet"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/pkg/ionet"
 	"github.com/gin-gonic/gin"
 )
 

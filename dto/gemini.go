@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/logger"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/logger"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

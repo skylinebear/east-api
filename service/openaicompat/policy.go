@@ -1,6 +1,6 @@
 package openaicompat
 
-import "github.com/skylinebear/new-api/setting/model_setting"
+import "github.com/skylinebear/east-api/setting/model_setting"
 
 func ShouldChatCompletionsUseResponsesPolicy(policy model_setting.ChatCompletionsToResponsesPolicy, channelID int, channelType int, model string) bool {
 	if !policy.IsChannelEnabled(channelID, channelType) {

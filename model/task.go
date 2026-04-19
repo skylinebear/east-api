@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	commonRelay "github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	commonRelay "github.com/skylinebear/east-api/relay/common"
 )
 
 type TaskStatus string

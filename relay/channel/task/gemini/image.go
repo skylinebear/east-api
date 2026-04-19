@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/constant"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/east-api/constant"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
 	"github.com/gin-gonic/gin"
 )
 

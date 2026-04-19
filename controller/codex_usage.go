@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/relay/channel/codex"
-	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/relay/channel/codex"
+	"github.com/skylinebear/east-api/service"
 
 	"github.com/gin-gonic/gin"
 )

@@ -7,11 +7,11 @@ import (
 	"math"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/logger"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/logger"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/types"
 	"github.com/samber/lo"
 
 	"github.com/gin-gonic/gin"

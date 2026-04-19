@@ -1,7 +1,7 @@
 package dify
 
 import (
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/dto"
 )
 
 type DifyChatRequest struct {

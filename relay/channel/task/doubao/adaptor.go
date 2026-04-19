@@ -8,15 +8,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/relay/channel"
-	"github.com/skylinebear/new-api/relay/channel/task/taskcommon"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/relay/channel"
+	"github.com/skylinebear/east-api/relay/channel/task/taskcommon"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/service"
 
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"

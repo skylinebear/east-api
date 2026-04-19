@@ -6,11 +6,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/logger"
-	"github.com/skylinebear/new-api/model"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/logger"
+	"github.com/skylinebear/east-api/model"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/bytedance/gopkg/util/gopool"
 	"github.com/gin-gonic/gin"

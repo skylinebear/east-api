@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/logger"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/relay/helper"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/logger"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/relay/helper"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/samber/lo"
 

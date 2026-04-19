@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/dto"
 )
 
 func ResponsesResponseToChatCompletionsResponse(resp *dto.OpenAIResponsesResponse, id string) (*dto.OpenAITextResponse, *dto.Usage, error) {

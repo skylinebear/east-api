@@ -6,9 +6,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
 	"github.com/gin-gonic/gin"
 )
 

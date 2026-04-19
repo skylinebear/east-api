@@ -4,10 +4,10 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/model"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/model"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

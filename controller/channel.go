@@ -9,14 +9,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/model"
-	relaychannel "github.com/skylinebear/new-api/relay/channel"
-	"github.com/skylinebear/new-api/relay/channel/gemini"
-	"github.com/skylinebear/new-api/relay/channel/ollama"
-	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/model"
+	relaychannel "github.com/skylinebear/east-api/relay/channel"
+	"github.com/skylinebear/east-api/relay/channel/gemini"
+	"github.com/skylinebear/east-api/relay/channel/ollama"
+	"github.com/skylinebear/east-api/service"
 
 	"github.com/gin-gonic/gin"
 )

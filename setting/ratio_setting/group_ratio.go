@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting/config"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting/config"
+	"github.com/skylinebear/east-api/types"
 )
 
 var defaultGroupRatio = map[string]float64{

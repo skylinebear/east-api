@@ -5,13 +5,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting"
-	"github.com/skylinebear/new-api/setting/config"
-	"github.com/skylinebear/new-api/setting/operation_setting"
-	"github.com/skylinebear/new-api/setting/performance_setting"
-	"github.com/skylinebear/new-api/setting/ratio_setting"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting"
+	"github.com/skylinebear/east-api/setting/config"
+	"github.com/skylinebear/east-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/setting/performance_setting"
+	"github.com/skylinebear/east-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/setting/system_setting"
 )
 
 type Option struct {

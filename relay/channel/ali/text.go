@@ -1,7 +1,7 @@
 package ali
 
 import (
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/dto"
 	"github.com/samber/lo"
 )
 

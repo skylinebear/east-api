@@ -1,6 +1,6 @@
 package siliconflow
 
-import "github.com/skylinebear/new-api/dto"
+import "github.com/skylinebear/east-api/dto"
 
 type SFTokens struct {
 	InputTokens  int `json:"input_tokens"`

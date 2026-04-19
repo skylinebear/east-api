@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/skylinebear/new-api/service/openaicompat"
-	"github.com/skylinebear/new-api/setting/model_setting"
+	"github.com/skylinebear/east-api/service/openaicompat"
+	"github.com/skylinebear/east-api/setting/model_setting"
 )
 
 func ShouldChatCompletionsUseResponsesPolicy(policy model_setting.ChatCompletionsToResponsesPolicy, channelID int, channelType int, model string) bool {

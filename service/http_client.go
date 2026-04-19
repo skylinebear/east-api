@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting/system_setting"
 
 	"golang.org/x/net/proxy"
 )

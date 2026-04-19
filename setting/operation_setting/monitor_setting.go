@@ -4,7 +4,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/skylinebear/new-api/setting/config"
+	"github.com/skylinebear/east-api/setting/config"
 )
 
 type MonitorSetting struct {

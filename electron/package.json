@@ -21,7 +21,7 @@
   "author": "skylinebear",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skylinebear/new-api"
+    "url": "https://github.com/skylinebear/east-api"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

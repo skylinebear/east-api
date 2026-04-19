@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"runtime/debug"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 	"github.com/gin-gonic/gin"
 )
 

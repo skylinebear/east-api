@@ -3,7 +3,7 @@ package service
 import (
 	"time"
 
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/model"
 )
 
 // ---------------------------------------------------------------------------

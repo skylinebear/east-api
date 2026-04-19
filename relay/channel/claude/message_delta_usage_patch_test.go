@@ -3,9 +3,9 @@ package claude
 import (
 	"testing"
 
-	"github.com/skylinebear/new-api/dto"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/setting/model_setting"
+	"github.com/skylinebear/east-api/dto"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/setting/model_setting"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/gjson"

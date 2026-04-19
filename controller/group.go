@@ -3,10 +3,10 @@ package controller
 import (
 	"net/http"
 
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/setting"
-	"github.com/skylinebear/new-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/setting"
+	"github.com/skylinebear/east-api/setting/ratio_setting"
 
 	"github.com/gin-gonic/gin"
 )

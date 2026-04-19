@@ -3,7 +3,7 @@ package zhipu_4v
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/dto"
 )
 
 func requestOpenAI2Zhipu(request dto.GeneralOpenAIRequest) *dto.GeneralOpenAIRequest {

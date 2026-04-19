@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/setting/ratio_setting"
 )
 
 var group2model2channels map[string]map[string][]int // enabled channel

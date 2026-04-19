@@ -10,15 +10,15 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/i18n"
-	"github.com/skylinebear/new-api/logger"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/i18n"
+	"github.com/skylinebear/east-api/logger"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/setting"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

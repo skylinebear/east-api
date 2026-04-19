@@ -3,7 +3,7 @@ package reasonmap
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 )
 
 func ClaudeStopReasonToOpenAIFinishReason(stopReason string) string {

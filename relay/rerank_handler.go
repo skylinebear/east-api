@@ -6,13 +6,13 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/relay/helper"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/setting/model_setting"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/relay/helper"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/setting/model_setting"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

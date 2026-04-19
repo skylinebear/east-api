@@ -1,7 +1,7 @@
 package helper
 
 import (
-	relaycommon "github.com/skylinebear/new-api/relay/common"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
 )
 
 // StreamResult is passed to each dataHandler invocation, providing methods

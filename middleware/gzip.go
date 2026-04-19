@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 	"github.com/andybalholm/brotli"
 	"github.com/gin-gonic/gin"
 )

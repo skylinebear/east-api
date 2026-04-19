@@ -3,8 +3,8 @@ package zhipu_4v
 import (
 	"time"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/types"
 )
 
 //	type ZhipuMessage struct {

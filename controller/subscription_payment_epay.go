@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/Calcium-Ion/go-epay/epay"
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/setting/operation_setting"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/setting/system_setting"
 	"github.com/gin-gonic/gin"
 	"github.com/samber/lo"
 )

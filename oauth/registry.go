@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
 )
 
 var (

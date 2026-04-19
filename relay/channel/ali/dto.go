@@ -3,9 +3,9 @@ package ali
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/logger"
-	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/logger"
+	"github.com/skylinebear/east-api/service"
 	"github.com/gin-gonic/gin"
 )
 

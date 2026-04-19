@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 	"github.com/go-redis/redis/v8"
 )
 

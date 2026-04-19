@@ -3,8 +3,8 @@ package service
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/setting"
-	"github.com/skylinebear/new-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/setting"
+	"github.com/skylinebear/east-api/setting/ratio_setting"
 )
 
 func GetUserUsableGroups(userGroup string) map[string]string {

@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/service"
 	"github.com/gin-gonic/gin"
 )
 

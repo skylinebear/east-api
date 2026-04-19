@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"unicode/utf8"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/i18n"
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/i18n"
+	"github.com/skylinebear/east-api/model"
 
 	"github.com/gin-gonic/gin"
 )

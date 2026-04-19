@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 )
 
 var (
@@ -27,7 +27,7 @@ func printHelp() {
 		binaryName = "eastcrea"
 	}
 	fmt.Println("EASTCREA " + Version + " - AI gateway and orchestration platform.")
-	fmt.Println("Repository: https://github.com/skylinebear/new-api")
+	fmt.Println("Repository: https://github.com/skylinebear/east-api")
 	fmt.Printf("Usage: %s [--port <port>] [--log-dir <log directory>] [--version] [--help]\n", binaryName)
 }
 

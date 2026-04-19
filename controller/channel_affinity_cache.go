@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/service"
+	"github.com/skylinebear/east-api/service"
 	"github.com/gin-gonic/gin"
 )
 

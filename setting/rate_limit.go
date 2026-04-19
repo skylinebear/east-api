@@ -6,7 +6,7 @@ import (
 	"math"
 	"sync"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 )
 
 var ModelRequestRateLimitEnabled = false

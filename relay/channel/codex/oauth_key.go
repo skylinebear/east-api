@@ -3,7 +3,7 @@ package codex
 import (
 	"errors"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 )
 
 type OAuthKey struct {

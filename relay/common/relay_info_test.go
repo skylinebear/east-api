@@ -3,7 +3,7 @@ package common
 import (
 	"testing"
 
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/types"
 	"github.com/stretchr/testify/require"
 )
 

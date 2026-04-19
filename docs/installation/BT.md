@@ -2,7 +2,7 @@
 
 本文档提供使用宝塔面板 Docker 功能部署 EASTCREA 的图文教程。
 
-> 📖 官方文档：[宝塔面板部署](https://github.com/skylinebear/new-api/tree/main/docs)
+> 📖 官方文档：[宝塔面板部署](https://github.com/skylinebear/east-api/tree/main/docs)
 
 ***
 
@@ -55,8 +55,8 @@
 
 ```bash
 cd /www/wwwroot
-git clone https://github.com/skylinebear/new-api.git
-cd new-api
+git clone https://github.com/skylinebear/east-api.git
+cd east-api
 ```
 
 3. 按需修改 `docker-compose.yml` 中的数据库、Redis 和密钥配置，然后启动：
@@ -125,10 +125,10 @@ docker compose down && docker compose up -d --build
 
 ## 相关链接
 
-- [官方文档](https://github.com/skylinebear/new-api/tree/main/docs)
-- [环境变量配置](https://github.com/skylinebear/new-api/tree/main/docs)
-- [常见问题](https://github.com/skylinebear/new-api/tree/main/docs)
-- [GitHub 仓库](https://github.com/skylinebear/new-api)
+- [官方文档](https://github.com/skylinebear/east-api/tree/main/docs)
+- [环境变量配置](https://github.com/skylinebear/east-api/tree/main/docs)
+- [常见问题](https://github.com/skylinebear/east-api/tree/main/docs)
+- [GitHub 仓库](https://github.com/skylinebear/east-api)
 
 ***
 

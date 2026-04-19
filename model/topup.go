@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/logger"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/logger"
 
 	"github.com/shopspring/decimal"
 	"gorm.io/gorm"

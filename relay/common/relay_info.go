@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	relayconstant "github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/setting/model_setting"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	relayconstant "github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/setting/model_setting"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"

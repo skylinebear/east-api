@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	relaycommon "github.com/skylinebear/new-api/relay/common"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 )

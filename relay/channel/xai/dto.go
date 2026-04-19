@@ -1,6 +1,6 @@
 package xai
 
-import "github.com/skylinebear/new-api/dto"
+import "github.com/skylinebear/east-api/dto"
 
 // ChatCompletionResponse represents the response from XAI chat completion API
 type ChatCompletionResponse struct {

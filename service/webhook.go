@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/setting/system_setting"
 )
 
 // WebhookPayload webhook 通知的负载数据

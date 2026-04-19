@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/skylinebear/new-api/setting/operation_setting"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/setting/system_setting"
 )
 
 func GetCallbackAddress() string {

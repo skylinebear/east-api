@@ -3,13 +3,13 @@ package controller
 import (
 	"strconv"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/relay"
-	"github.com/skylinebear/new-api/service"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/relay"
+	"github.com/skylinebear/east-api/service"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

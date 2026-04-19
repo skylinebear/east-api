@@ -6,11 +6,11 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/relay/channel"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/relay/constant"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/relay/channel"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/relay/constant"
+	"github.com/skylinebear/east-api/types"
 
 	"github.com/gin-gonic/gin"
 )

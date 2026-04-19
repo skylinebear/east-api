@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/model"
-	"github.com/skylinebear/new-api/setting/system_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/model"
+	"github.com/skylinebear/east-api/setting/system_setting"
 )
 
 func NotifyRootUser(t string, subject string, content string) {

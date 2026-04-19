@@ -3,7 +3,7 @@ package service
 import (
 	"strings"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 )
 
 func CoverTaskActionToModelName(platform constant.TaskPlatform, action string) string {

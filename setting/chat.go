@@ -3,7 +3,7 @@ package setting
 import (
 	"encoding/json"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 )
 
 var Chats = []map[string]string{

@@ -1,6 +1,6 @@
 package cohere
 
-import "github.com/skylinebear/new-api/dto"
+import "github.com/skylinebear/east-api/dto"
 
 type CohereRequest struct {
 	Model       string        `json:"model"`

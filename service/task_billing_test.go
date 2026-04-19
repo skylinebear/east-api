@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/model"
-	relaycommon "github.com/skylinebear/new-api/relay/common"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/model"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
 	"github.com/glebarez/sqlite"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

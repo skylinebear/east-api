@@ -1,7 +1,7 @@
 package ratio_setting
 
 import (
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/types"
 )
 
 var defaultCacheRatio = map[string]float64{

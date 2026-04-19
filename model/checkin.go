@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/setting/operation_setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/setting/operation_setting"
 	"gorm.io/gorm"
 )
 

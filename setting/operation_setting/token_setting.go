@@ -1,6 +1,6 @@
 package operation_setting
 
-import "github.com/skylinebear/new-api/setting/config"
+import "github.com/skylinebear/east-api/setting/config"
 
 // TokenSetting 令牌相关配置
 type TokenSetting struct {

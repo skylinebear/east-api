@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skylinebear/new-api/constant"
+	"github.com/skylinebear/east-api/constant"
 	"github.com/pkg/errors"
 
 	"github.com/gin-gonic/gin"

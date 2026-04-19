@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/common/limiter"
-	"github.com/skylinebear/new-api/constant"
-	"github.com/skylinebear/new-api/setting"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/common/limiter"
+	"github.com/skylinebear/east-api/constant"
+	"github.com/skylinebear/east-api/setting"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"

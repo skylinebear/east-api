@@ -1,6 +1,6 @@
 package xunfei
 
-import "github.com/skylinebear/new-api/dto"
+import "github.com/skylinebear/east-api/dto"
 
 type XunfeiMessage struct {
 	Role    string `json:"role"`

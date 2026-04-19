@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/types"
 	"github.com/gin-gonic/gin"
 )
 

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/skylinebear/new-api/dto"
+	"github.com/skylinebear/east-api/dto"
 )
 
 type BaiduMessage struct {

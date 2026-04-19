@@ -1,8 +1,8 @@
 package relay
 
 import (
-	relaycommon "github.com/skylinebear/new-api/relay/common"
-	"github.com/skylinebear/new-api/types"
+	relaycommon "github.com/skylinebear/east-api/relay/common"
+	"github.com/skylinebear/east-api/types"
 )
 
 func newAPIErrorFromParamOverride(err error) *types.NewAPIError {

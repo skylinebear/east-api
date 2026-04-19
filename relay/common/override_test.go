@@ -6,11 +6,11 @@ import (
 	"reflect"
 	"testing"
 
-	common2 "github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/types"
+	common2 "github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/types"
 
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/setting/model_setting"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/setting/model_setting"
 	"github.com/samber/lo"
 )
 

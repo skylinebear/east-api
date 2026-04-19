@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/samber/hot"
-	"github.com/skylinebear/new-api/common"
-	"github.com/skylinebear/new-api/pkg/cachex"
+	"github.com/skylinebear/east-api/common"
+	"github.com/skylinebear/east-api/pkg/cachex"
 	"gorm.io/gorm"
 )
 

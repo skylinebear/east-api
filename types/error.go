@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skylinebear/new-api/common"
+	"github.com/skylinebear/east-api/common"
 )
 
 type OpenAIError struct {

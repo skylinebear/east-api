@@ -1,8 +1,8 @@
 package common
 
 import (
-	"github.com/skylinebear/new-api/dto"
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/dto"
+	"github.com/skylinebear/east-api/types"
 )
 
 func GuessRelayFormatFromRequest(req any) (types.RelayFormat, bool) {

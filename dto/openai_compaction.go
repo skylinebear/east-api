@@ -3,7 +3,7 @@ package dto
 import (
 	"encoding/json"
 
-	"github.com/skylinebear/new-api/types"
+	"github.com/skylinebear/east-api/types"
 )
 
 type OpenAIResponsesCompactionResponse struct {

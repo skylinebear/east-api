@@ -1,4 +1,4 @@
-module github.com/skylinebear/new-api
+module github.com/skylinebear/east-api
 
 // +heroku goVersion go1.18
 go 1.25.1

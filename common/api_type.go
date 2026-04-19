@@ -1,6 +1,6 @@
 package common
 
-import "github.com/skylinebear/new-api/constant"
+import "github.com/skylinebear/east-api/constant"
 
 func ChannelType2APIType(channelType int) (int, bool) {
 	apiType := -1

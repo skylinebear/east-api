@@ -3,7 +3,7 @@ package oauth
 import (
 	"context"
 
-	"github.com/skylinebear/new-api/model"
+	"github.com/skylinebear/east-api/model"
 	"github.com/gin-gonic/gin"
 )
 
