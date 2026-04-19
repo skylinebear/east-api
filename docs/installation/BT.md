@@ -46,9 +46,10 @@
 cd /www/wwwroot
 git clone https://github.com/skylinebear/east-api.git
 cd east-api
+cp .env.example .env
 ```
 
-3. 按需修改 `docker-compose.yml` 中的数据库、Redis 和密钥配置，然后启动：
+3. 按需修改 `.env` 中的数据库、Redis、密钥和 `SERVER_ADDRESS` 配置，然后启动：
 
 ```bash
 docker compose up -d --build
@@ -91,6 +92,7 @@ http://127.0.0.1:3000
 | ------------------- | ------------------ | ------ |
 | `SESSION_SECRET`    | 会话密钥，多机部署必须一致      | **必填** |
 | `CRYPTO_SECRET`     | 加密密钥，使用 Redis 时必填  | 条件必填   |
+| `SERVER_ADDRESS`    | 站点对外访问地址，建议填写域名   | 生产推荐 |
 | `SQL_DSN`           | 数据库连接字符串（使用外部数据库时） | 可选     |
 | `REDIS_CONN_STRING` | Redis 连接字符串        | 可选     |
 

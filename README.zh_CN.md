@@ -124,23 +124,25 @@ docker compose up -d --build
 <summary><strong>使用 Docker 命令</strong></summary>
 
 ```bash
-# 拉取最新镜像
-docker build -t eastcrea/new-api:local .
+# 构建本地镜像
+docker build -t eastcrea/east-api:local .
 
 # 使用 SQLite（默认）
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
+  -e SERVER_ADDRESS="https://api.example.com" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 
 # 使用 MySQL
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
-  -e SQL_DSN="root:123456@tcp(localhost:3306)/new-api" \
+  -e SERVER_ADDRESS="https://api.example.com" \
+  -e SQL_DSN="root:123456@tcp(localhost:3306)/east_api" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 ```
 
 > **💡 提示：** `-v ./data:/data` 会将数据保存在当前目录的 `data` 文件夹中，你也可以改为绝对路径如 `-v /your/custom/path:/data`
@@ -295,7 +297,7 @@ docker run --name new-api -d --restart always \
 ## 🚢 部署
 
 > [!TIP]
-> **最新版 Docker 镜像：** `eastcrea/new-api:local`
+> **最新版 Docker 镜像：** `eastcrea/east-api:local`
 
 ### 📋 部署要求
 
@@ -314,6 +316,7 @@ docker run --name new-api -d --restart always \
 |--------|--------------------------------------------------------------|--------|
 | `SESSION_SECRET` | 会话密钥（多机部署必须）                                                 | - |
 | `CRYPTO_SECRET` | 加密密钥（Redis 必须）                                               | - |
+| `SERVER_ADDRESS` | 站点对外访问地址，建议生产环境设置为你的域名                             | - |
 | `SQL_DSN` | 数据库连接字符串                                                     | - |
 | `REDIS_CONN_STRING` | Redis 连接字符串                                                  | - |
 | `STREAMING_TIMEOUT` | 流式超时时间（秒）                                                    | `300` |
@@ -322,12 +325,12 @@ docker run --name new-api -d --restart always \
 | `AZURE_DEFAULT_API_VERSION` | Azure API 版本                                                 | `2025-04-01-preview` |
 | `ERROR_LOG_ENABLED` | 错误日志开关                                                       | `false` |
 | `PYROSCOPE_URL` | Pyroscope 服务地址                                            | - |
-| `PYROSCOPE_APP_NAME` | Pyroscope 应用名                                        | `new-api` |
+| `PYROSCOPE_APP_NAME` | Pyroscope 应用名                                        | `east-api` |
 | `PYROSCOPE_BASIC_AUTH_USER` | Pyroscope Basic Auth 用户名                        | - |
 | `PYROSCOPE_BASIC_AUTH_PASSWORD` | Pyroscope Basic Auth 密码                  | - |
 | `PYROSCOPE_MUTEX_RATE` | Pyroscope mutex 采样率                               | `5` |
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block 采样率                               | `5` |
-| `HOSTNAME` | Pyroscope 标签里的主机名                                          | `new-api` |
+| `HOSTNAME` | Pyroscope 标签里的主机名                                          | `east-api` |
 
 📖 **完整配置：** [环境变量文档](https://github.com/skylinebear/east-api/tree/main/docs)
 
@@ -357,23 +360,25 @@ docker compose up -d --build
 
 **使用 SQLite：**
 ```bash
-docker build -t eastcrea/new-api:local .
+docker build -t eastcrea/east-api:local .
 
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
+  -e SERVER_ADDRESS="https://api.example.com" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 ```
 
 **使用 MySQL：**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
-  -e SQL_DSN="root:123456@tcp(localhost:3306)/new-api" \
+  -e SERVER_ADDRESS="https://api.example.com" \
+  -e SQL_DSN="root:123456@tcp(localhost:3306)/east_api" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 ```
 
 > **💡 路径说明：**

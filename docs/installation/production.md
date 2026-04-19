@@ -16,6 +16,12 @@ api.example.com
 
 正式环境建议关闭公网 `3000`，仅保留本机访问。
 
+同时建议在 `.env` 中明确设置：
+
+```dotenv
+SERVER_ADDRESS=https://api.example.com
+```
+
 ## 二、将应用端口限制为本机访问
 
 编辑 `docker-compose.yml`，把：
@@ -134,7 +140,7 @@ sudo systemctl reload nginx
 
 ```bash
 docker compose ps
-docker compose logs -f new-api
+docker compose logs -f east-api
 ```
 
 ### 2. Certbot 申请证书失败
@@ -151,5 +157,5 @@ docker compose logs -f new-api
 
 ```bash
 docker compose up -d --build
-docker compose logs -f new-api
+docker compose logs -f east-api
 ```

@@ -1,0 +1,19 @@
+# File path: /etc/systemd/system/east-api.service
+# sudo systemctl daemon-reload
+# sudo systemctl start east-api
+# sudo systemctl enable east-api
+# sudo systemctl status east-api
+[Unit]
+Description=EAST-API Service
+After=network.target
+
+[Service]
+User=ubuntu  # 注意修改用户名
+WorkingDirectory=/path/to/east-api  # 注意修改路径
+Environment=SERVER_ADDRESS=https://api.example.com
+ExecStart=/path/to/east-api/east-api --port 3000 --log-dir /path/to/east-api/logs  # 注意修改路径和端口号
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

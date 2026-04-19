@@ -41,21 +41,22 @@ sudo chown -R $USER:$USER /opt/east-api
 cd /opt/east-api
 ```
 
-## 四、修改部署配置
+## 四、准备环境变量
 
-编辑 `docker-compose.yml`：
+推荐先复制环境变量模板：
 
 ```bash
-nano docker-compose.yml
+cp .env.example .env
+nano .env
 ```
 
 至少需要修改以下值：
 
 - `POSTGRES_PASSWORD`
-- Redis 的 `--requirepass`
-- `REDIS_CONN_STRING`
+- `REDIS_PASSWORD`
 - `SESSION_SECRET`
 - `CRYPTO_SECRET`
+- `SERVER_ADDRESS`
 - `NODE_NAME`
 
 生成随机密钥：
@@ -66,14 +67,13 @@ openssl rand -hex 32
 
 推荐写法示例：
 
-```yaml
-environment:
-  - SQL_DSN=postgresql://root:your-postgres-password@postgres:5432/new-api
-  - REDIS_CONN_STRING=redis://:your-redis-password@redis:6379
-  - TZ=Asia/Shanghai
-  - NODE_NAME=east-api-node-1
-  - SESSION_SECRET=replace-with-random-secret
-  - CRYPTO_SECRET=replace-with-random-secret
+```dotenv
+POSTGRES_PASSWORD=replace-with-postgres-password
+REDIS_PASSWORD=replace-with-redis-password
+SESSION_SECRET=replace-with-random-secret
+CRYPTO_SECRET=replace-with-random-secret
+SERVER_ADDRESS=https://api.example.com
+NODE_NAME=east-api-node-1
 ```
 
 ## 五、启动服务
@@ -86,7 +86,7 @@ docker compose up -d --build
 
 ```bash
 docker compose ps
-docker compose logs -f new-api
+docker compose logs -f east-api
 ```
 
 如果日志持续正常输出，浏览器访问：
@@ -142,6 +142,7 @@ docker compose down
 ## 九、注意事项
 
 - 不要执行 `docker pull calciumion/new-api:latest` 之类的命令
+- 不要把 `SERVER_ADDRESS` 留空后再依赖支付回调、邮件重置链接或第三方跳转
 - 不要执行 `docker compose down -v`
 - 如果准备上生产，请继续参考 [域名与 HTTPS 生产部署](./production.md)
 - 如果你使用宝塔，请参考 [宝塔面板部署](./BT.md)

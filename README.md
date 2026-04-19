@@ -124,23 +124,25 @@ docker compose up -d --build
 <summary><strong>Using Docker Commands</strong></summary>
 
 ```bash
-# Pull the latest image
-docker build -t eastcrea/new-api:local .
+# Build the local image
+docker build -t eastcrea/east-api:local .
 
 # Using SQLite (default)
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
+  -e SERVER_ADDRESS="https://api.example.com" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 
 # Using MySQL
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
-  -e SQL_DSN="root:123456@tcp(localhost:3306)/new-api" \
+  -e SERVER_ADDRESS="https://api.example.com" \
+  -e SQL_DSN="root:123456@tcp(localhost:3306)/east_api" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 ```
 
 > **💡 Tip:** `-v ./data:/data` will save data in the `data` folder of the current directory, you can also change it to an absolute path like `-v /your/custom/path:/data`
@@ -295,7 +297,7 @@ docker run --name new-api -d --restart always \
 ## 🚢 Deployment
 
 > [!TIP]
-> **Latest Docker image:** `eastcrea/new-api:local`
+> **Latest Docker image:** `eastcrea/east-api:local`
 
 ### 📋 Deployment Requirements
 
@@ -314,6 +316,7 @@ docker run --name new-api -d --restart always \
 |--------|------|--------|
 | `SESSION_SECRET` | Session secret (required for multi-machine deployment) | - |
 | `CRYPTO_SECRET` | Encryption secret (required for Redis) | - |
+| `SERVER_ADDRESS` | Public site URL; recommended for production deployments | - |
 | `SQL_DSN` | Database connection string | - |
 | `REDIS_CONN_STRING` | Redis connection string | - |
 | `STREAMING_TIMEOUT` | Streaming timeout (seconds) | `300` |
@@ -322,12 +325,12 @@ docker run --name new-api -d --restart always \
 | `AZURE_DEFAULT_API_VERSION` | Azure API version | `2025-04-01-preview` |
 | `ERROR_LOG_ENABLED` | Error log switch | `false` |
 | `PYROSCOPE_URL` | Pyroscope server address | - |
-| `PYROSCOPE_APP_NAME` | Pyroscope application name | `new-api` |
+| `PYROSCOPE_APP_NAME` | Pyroscope application name | `east-api` |
 | `PYROSCOPE_BASIC_AUTH_USER` | Pyroscope basic auth user | - |
 | `PYROSCOPE_BASIC_AUTH_PASSWORD` | Pyroscope basic auth password | - |
 | `PYROSCOPE_MUTEX_RATE` | Pyroscope mutex sampling rate | `5` |
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block sampling rate | `5` |
-| `HOSTNAME` | Hostname tag for Pyroscope | `new-api` |
+| `HOSTNAME` | Hostname tag for Pyroscope | `east-api` |
 
 📖 **Complete configuration:** [Environment Variables Documentation](https://github.com/skylinebear/east-api/tree/main/docs)
 
@@ -357,23 +360,25 @@ docker compose up -d --build
 
 **Using SQLite:**
 ```bash
-docker build -t eastcrea/new-api:local .
+docker build -t eastcrea/east-api:local .
 
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
+  -e SERVER_ADDRESS="https://api.example.com" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 ```
 
 **Using MySQL:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name east-api -d --restart always \
   -p 3000:3000 \
-  -e SQL_DSN="root:123456@tcp(localhost:3306)/new-api" \
+  -e SERVER_ADDRESS="https://api.example.com" \
+  -e SQL_DSN="root:123456@tcp(localhost:3306)/east_api" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  eastcrea/new-api:local
+  eastcrea/east-api:local
 ```
 
 > **💡 Path explanation:**

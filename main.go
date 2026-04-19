@@ -24,6 +24,7 @@ import (
 	"github.com/skylinebear/east-api/service"
 	_ "github.com/skylinebear/east-api/setting/performance_setting"
 	"github.com/skylinebear/east-api/setting/ratio_setting"
+	"github.com/skylinebear/east-api/setting/system_setting"
 
 	"github.com/bytedance/gopkg/util/gopool"
 	"github.com/gin-contrib/sessions"
@@ -272,6 +273,7 @@ func InitResources() error {
 
 	// Initialize options, should after model.InitDB()
 	model.InitOptionMap()
+	applySystemSettingEnvOverrides()
 
 	// 清理旧的磁盘缓存文件
 	common.CleanupOldCacheFiles()
@@ -313,4 +315,18 @@ func InitResources() error {
 	}
 
 	return nil
+}
+
+func applySystemSettingEnvOverrides() {
+	serverAddress := strings.TrimRight(common.GetEnvOrDefaultString("SERVER_ADDRESS", ""), "/")
+	if serverAddress == "" {
+		return
+	}
+	system_setting.ServerAddress = serverAddress
+	common.OptionMapRWMutex.Lock()
+	if common.OptionMap != nil {
+		common.OptionMap["ServerAddress"] = serverAddress
+	}
+	common.OptionMapRWMutex.Unlock()
+	common.SysLog("using SERVER_ADDRESS from environment: " + serverAddress)
 }

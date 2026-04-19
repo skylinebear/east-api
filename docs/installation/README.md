@@ -26,6 +26,7 @@
 ## 统一原则
 
 - 部署仓库统一使用 `https://github.com/skylinebear/east-api.git`
+- 建议先复制 `.env.example` 为 `.env`，再填写密码、密钥和 `SERVER_ADDRESS`
 - 容器镜像统一由当前源码仓库本地构建，不要执行任何上游镜像拉取命令
 - 生产环境建议只对外开放 `80` 和 `443`，不要长期暴露 `3000`
 - `SESSION_SECRET` 和 `CRYPTO_SECRET` 必须自行生成并替换为高强度随机值
