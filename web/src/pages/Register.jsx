@@ -1,4 +1,4 @@
-/* EASTCREA v4 — Register Page */
+/* East API — Register Page */
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { register, sendEmailVerification } from '../api.js'
@@ -7,7 +7,7 @@ import Layout from '../components/Layout.jsx'
 
 export default function Register() {
   const navigate = useNavigate()
-  const { status } = useAuth()
+  const { status, brandName, brandLogo } = useAuth()
   const [form, setForm] = useState({ username: '', password: '', password2: '', email: '', verification_code: '', invitation_code: '' })
   const [loading, setLoading] = useState(false)
   const [sendingCode, setSendingCode] = useState(false)
@@ -66,13 +66,13 @@ export default function Register() {
       <main className="public-main auth-shell">
         <section className="auth-card">
           <div className="brand-lockup">
-            <img src="/logo.png" alt="EASTCREA icon" />
+            <img src={brandLogo} alt={`${brandName} 标识`} />
             <div>
-              <span className="mini-label">EASTCREA</span>
-              <h1>注册</h1>
+              <span className="mini-label">{brandName}</span>
+              <h1>创建账户</h1>
             </div>
           </div>
-          <p>创建账户，开始使用 EASTCREA 工作台。</p>
+          <p>创建账户，开始使用 {brandName} 工作台。</p>
 
           {error && <div className="notice warn" style={{ marginTop: 16 }}>{error}</div>}
           {success && <div className="notice success" style={{ marginTop: 16 }}>{success}</div>}

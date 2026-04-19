@@ -1,7 +1,10 @@
-/* EASTCREA v4 — Legal Pages */
+/* East API — Legal Pages */
 import Layout from '../components/Layout.jsx'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export function UserAgreement() {
+  const { brandName } = useAuth()
+
   return (
     <Layout>
       <main className="public-main">
@@ -11,9 +14,9 @@ export function UserAgreement() {
           <div className="legal-body">
             <p>最后更新：2026年4月</p>
             <h2>服务说明</h2>
-            <p>欢迎使用 EASTCREA AI 模型聚合网关。在使用本服务前，请仔细阅读以下服务条款。使用本服务即表示您同意这些条款。</p>
+            <p>欢迎使用 {brandName} AI 模型聚合网关。在使用本服务前，请仔细阅读以下服务条款。使用本服务即表示您同意这些条款。</p>
             <h2>服务内容</h2>
-            <p>EASTCREA 提供以下服务：</p>
+            <p>{brandName} 提供以下服务：</p>
             <ul>
               <li>AI 模型 API 聚合与代理服务</li>
               <li>统一的 OpenAI 兼容接口</li>
@@ -36,7 +39,7 @@ export function UserAgreement() {
             <p>本服务按"现状"提供，不对服务的可用性、准确性或特定用途作出保证。我们不对因使用本服务导致的任何损失负责。</p>
           </div>
           <div className="legal-meta">
-            <span>© 2026 EASTCREA</span>
+            <span>© 2026 {brandName}</span>
           </div>
         </article>
       </main>
@@ -45,6 +48,8 @@ export function UserAgreement() {
 }
 
 export function PrivacyPolicy() {
+  const { brandName } = useAuth()
+
   return (
     <Layout>
       <main className="public-main">
@@ -83,7 +88,7 @@ export function PrivacyPolicy() {
             <p>如对本隐私政策有任何疑问，请通过平台内渠道联系我们。</p>
           </div>
           <div className="legal-meta">
-            <span>© 2026 EASTCREA</span>
+            <span>© 2026 {brandName}</span>
           </div>
         </article>
       </main>

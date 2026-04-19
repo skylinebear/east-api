@@ -1,10 +1,12 @@
-/* EASTCREA v4 — Reset Password */
+/* East API — Reset Password */
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { sendPasswordResetEmail, resetPassword } from '../api.js'
 import Layout from '../components/Layout.jsx'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export default function Reset() {
+  const { brandName, brandLogo } = useAuth()
   const [step, setStep] = useState(1) // 1: send email, 2: reset
   const [email, setEmail] = useState('')
   const [form, setForm] = useState({ email: '', token: '', new_password: '' })
@@ -59,9 +61,9 @@ export default function Reset() {
       <main className="public-main auth-shell">
         <section className="auth-card">
           <div className="brand-lockup">
-            <img src="/logo.png" alt="EASTCREA icon" />
+            <img src={brandLogo} alt={`${brandName} 标识`} />
             <div>
-              <span className="mini-label">EASTCREA</span>
+              <span className="mini-label">{brandName}</span>
               <h1>重置密码</h1>
             </div>
           </div>
@@ -71,7 +73,7 @@ export default function Reset() {
 
           {step === 1 && (
             <>
-              <p>输入您的账户邮箱，我们将发送重置链接。</p>
+              <p>输入您在 {brandName} 的账户邮箱，我们将发送重置链接。</p>
               <form className="auth-form" onSubmit={handleSend}>
                 <div className="field">
                   <label>账户邮箱</label>
@@ -86,7 +88,7 @@ export default function Reset() {
 
           {step === 2 && (
             <>
-              <p>请输入邮件中的验证码并设置新密码。</p>
+              <p>请输入邮件中的验证码并设置新的登录密码。</p>
               <form className="auth-form" onSubmit={handleReset}>
                 <div className="field">
                   <label>验证码</label>

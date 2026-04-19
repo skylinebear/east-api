@@ -1,11 +1,13 @@
-/* EASTCREA v4 — Initial Setup */
+/* East API — Initial Setup */
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { setupSystem } from '../api.js'
 import Layout from '../components/Layout.jsx'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export default function Setup() {
   const navigate = useNavigate()
+  const { brandName, brandLogo } = useAuth()
   const [form, setForm] = useState({ username: '', password: '', password2: '' })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -44,13 +46,13 @@ export default function Setup() {
       <main className="public-main auth-shell">
         <section className="auth-card">
           <div className="brand-lockup">
-            <img src="/logo.png" alt="EASTCREA icon" />
+            <img src={brandLogo} alt={`${brandName} 标识`} />
             <div>
-              <span className="mini-label">EASTCREA</span>
+              <span className="mini-label">{brandName}</span>
               <h1>初始化设置</h1>
             </div>
           </div>
-          <p>创建管理员账户以完成系统初始化。</p>
+          <p>创建管理员账户，完成 {brandName} 的首次初始化。</p>
           {error && <div className="notice warn" style={{ marginTop: 16 }}>{error}</div>}
           <form className="auth-form" onSubmit={handleSubmit}>
             <div className="field">

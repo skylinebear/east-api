@@ -1,7 +1,7 @@
 {
-  "name": "eastcrea-v4",
+  "name": "east-api-web",
   "version": "4.0.0",
-  "description": "EASTCREA v4 — AI Model Gateway Frontend",
+  "description": "East API web frontend",
   "private": true,
   "type": "module",
   "scripts": {

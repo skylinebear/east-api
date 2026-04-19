@@ -1,4 +1,4 @@
-/* EASTCREA v4 — Public Layout (header + footer) */
+/* East API — Public Layout (header + footer) */
 import { useState, useRef, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth.jsx'
@@ -71,7 +71,7 @@ function UserMenu({ user, logout }) {
 }
 
 export default function Layout({ children }) {
-  const { user, logout } = useAuth()
+  const { user, logout, brandName, brandLogo } = useAuth()
   const { pathname } = useLocation()
 
   const nav = [
@@ -86,8 +86,8 @@ export default function Layout({ children }) {
     <div className="app-shell">
       <header className="site-header">
         <Link className="header-brand" to="/">
-          <img src="/logo.png" alt="EASTCREA icon" />
-          <strong>EASTCREA</strong>
+          <img src={brandLogo} alt={`${brandName} 标识`} />
+          <strong>{brandName}</strong>
         </Link>
 
         <div className="header-main">
@@ -131,7 +131,7 @@ export default function Layout({ children }) {
 
       <footer className="site-footer">
         <div>
-          <strong>EASTCREA</strong>
+          <strong>{brandName}</strong>
           更体面的团队智能工作前台。
         </div>
         <div>

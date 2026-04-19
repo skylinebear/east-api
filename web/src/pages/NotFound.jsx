@@ -1,16 +1,19 @@
-/* EASTCREA v4 — 404 Not Found */
+/* East API — 404 Not Found */
 import { Link } from 'react-router-dom'
 import Layout from '../components/Layout.jsx'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export default function NotFound() {
+  const { brandName, brandLogo } = useAuth()
+
   return (
     <Layout>
       <main className="public-main status-shell">
         <section className="status-card">
           <div className="brand-lockup">
-            <img src="/logo.png" alt="EASTCREA icon" />
+            <img src={brandLogo} alt={`${brandName} 标识`} />
             <div>
-              <span className="mini-label">EASTCREA</span>
+              <span className="mini-label">{brandName}</span>
               <h1>页面不见了</h1>
             </div>
           </div>

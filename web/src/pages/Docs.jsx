@@ -1,7 +1,9 @@
-/* EASTCREA v4 — Docs Page */
+/* East API — Docs Page */
 import Layout from '../components/Layout.jsx'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export default function Docs() {
+  const { brandName } = useAuth()
   const origin = typeof window !== 'undefined' ? window.location.origin : ''
 
   return (
@@ -13,19 +15,19 @@ export default function Docs() {
           <header className="unified-page-header">
             <span className="mini-label">Documentation</span>
             <h1>文档中心</h1>
-            <p>了解如何接入 EASTCREA API 网关，管理令牌、渠道与模型，快速构建 AI 工作流。</p>
+            <p>了解如何接入 {brandName} API 网关，管理令牌、渠道与模型，快速构建 AI 工作流。</p>
           </header>
 
           {/* 快速接入 */}
           <section className="unified-section">
             <h2>快速接入</h2>
             <p style={{ color: 'var(--ink-soft)', fontSize: 14, lineHeight: 1.8, marginBottom: 16 }}>
-              将 API 基础地址替换为 EASTCREA 端点，使用控制台生成的令牌，即可立即调用所有接入模型。
+              将 API 基础地址替换为 {brandName} 端点，使用控制台生成的令牌，即可立即调用所有接入模型。
             </p>
             <div className="code-panel" style={{ fontSize: 13 }}>
               {`const client = new OpenAI({
   apiKey: "sk-...",        // 控制台生成的令牌
-  baseURL: "${origin}/v1"  // EASTCREA 统一端点
+  baseURL: "${origin}/v1"  // ${brandName} 统一端点
 })
 
 const response = await client.chat.completions.create({
@@ -65,7 +67,7 @@ const response = await client.chat.completions.create({
           <section className="unified-section">
             <h2>接口参考</h2>
             <p style={{ color: 'var(--ink-soft)', fontSize: 14, lineHeight: 1.8, marginBottom: 16 }}>
-              EASTCREA 完全兼容 OpenAI API 格式，无需修改现有代码即可接入：
+              {brandName} 完全兼容 OpenAI API 格式，无需修改现有代码即可接入：
             </p>
             <div className="table-panel">
               <table>

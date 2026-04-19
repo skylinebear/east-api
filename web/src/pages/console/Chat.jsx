@@ -1,13 +1,15 @@
-/* EASTCREA v4 — Chat Interface */
+/* East API — Chat Interface */
 import { useState, useRef, useEffect } from 'react'
 import { getModels } from '../../api.js'
 import ConsoleLayout from '../../components/ConsoleLayout.jsx'
+import { useAuth } from '../../hooks/useAuth.jsx'
 
-const WELCOME = '你好！我是 EASTCREA 助手，有什么可以帮助您？'
+const buildWelcome = (brandName) => `你好！我是 ${brandName} 助手，有什么可以帮助您？`
 
 export default function Chat() {
+  const { brandName } = useAuth()
   const [sessions, setSessions] = useState([
-    { id: 1, title: '新建会话', model: 'gpt-4o', messages: [{ role: 'assistant', content: WELCOME }] }
+    { id: 1, title: '新建会话', model: 'gpt-4o', messages: [{ role: 'assistant', content: buildWelcome(brandName) }] }
   ])
   const [activeId, setActiveId] = useState(1)
   const [input, setInput] = useState('')
@@ -40,7 +42,7 @@ export default function Chat() {
 
   const newSession = () => {
     const id = Date.now()
-    const s = { id, title: '新建会话', model: selectedModel, messages: [{ role: 'assistant', content: WELCOME }] }
+    const s = { id, title: '新建会话', model: selectedModel, messages: [{ role: 'assistant', content: buildWelcome(brandName) }] }
     setSessions(prev => [s, ...prev])
     setActiveId(id)
   }

@@ -1,4 +1,4 @@
-/* EASTCREA v4 — Login Page */
+/* East API — Login Page */
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { login } from '../api.js'
@@ -6,7 +6,7 @@ import { useAuth } from '../hooks/useAuth.jsx'
 import Layout from '../components/Layout.jsx'
 
 export default function Login() {
-  const { setUser } = useAuth()
+  const { setUser, brandName, brandLogo } = useAuth()
   const [form, setForm] = useState({ username: '', password: '' })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -40,13 +40,13 @@ export default function Login() {
       <main className="public-main auth-shell">
         <section className="auth-card">
           <div className="brand-lockup">
-            <img src="/logo.png" alt="EASTCREA icon" />
+            <img src={brandLogo} alt={`${brandName} 标识`} />
             <div>
-              <span className="mini-label">EASTCREA</span>
-              <h1>登录</h1>
+              <span className="mini-label">{brandName}</span>
+              <h1>欢迎登录</h1>
             </div>
           </div>
-          <p>使用用户名或邮箱继续进入工作台。</p>
+          <p>使用用户名或邮箱登录 {brandName} 工作台。</p>
 
           {error && <div className="notice warn" style={{ marginTop: 16 }}>{error}</div>}
 
@@ -75,7 +75,7 @@ export default function Login() {
             </div>
 
             <button className="button primary" type="submit" disabled={loading}>
-              {loading ? <span className="loading-spinner" /> : '继续'}
+              {loading ? <span className="loading-spinner" /> : '登录并进入'}
             </button>
           </form>
 

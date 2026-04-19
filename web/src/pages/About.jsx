@@ -1,8 +1,11 @@
-/* EASTCREA v4 — About Page */
+/* East API — About Page */
 import { Link } from 'react-router-dom'
 import Layout from '../components/Layout.jsx'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export default function About() {
+  const { brandName } = useAuth()
+
   return (
     <Layout>
       <main className="public-main">
@@ -10,10 +13,10 @@ export default function About() {
 
           {/* 页面标题 */}
           <header className="unified-page-header">
-            <span className="mini-label">About EASTCREA</span>
+            <span className="mini-label">About {brandName}</span>
             <h1>关于我们</h1>
             <p>
-              EASTCREA 是一个统一的 AI 模型聚合与分发网关，致力于为团队提供更体面、
+              {brandName} 是一个统一的 AI 模型聚合与分发网关，致力于为团队提供更体面、
               更高效的 AI 基础设施。
             </p>
           </header>
