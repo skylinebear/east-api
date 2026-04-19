@@ -151,7 +151,11 @@ docker run --name new-api -d --restart always \
 
 🎉 After deployment is complete, visit `http://localhost:3000` to start using!
 
-📖 For more deployment methods, please refer to [Deployment Guide](https://github.com/skylinebear/east-api/tree/main/docs)
+📖 For more deployment references:
+- [Deployment Index](./docs/installation/README.md)
+- [Standard Server Deployment](./docs/installation/server.md)
+- [Production Deployment with Domain and HTTPS](./docs/installation/production.md)
+- [BaoTa Panel Deployment](./docs/installation/BT.md)
 
 ---
 
@@ -167,7 +171,7 @@ docker run --name new-api -d --restart always \
 
 | Category | Link |
 |------|------|
-| 🚀 Deployment Guide | [Installation Documentation](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🚀 Deployment Guide | [Deployment Index](./docs/installation/README.md) |
 | ⚙️ Environment Configuration | [Environment Variables](https://github.com/skylinebear/east-api/tree/main/docs) |
 | 📡 API Documentation | [API Documentation](https://github.com/skylinebear/east-api/tree/main/docs) |
 | ❓ FAQ | [FAQ](https://github.com/skylinebear/east-api/tree/main/docs) |
@@ -381,13 +385,19 @@ docker run --name new-api -d --restart always \
 <details>
 <summary><strong>Method 3: BaoTa Panel</strong></summary>
 
-1. Install BaoTa Panel (≥ 9.2.0 version)
-2. Search for **New-API** in the application store
-3. One-click installation
+1. Install BaoTa Panel and Docker
+2. Clone `skylinebear/east-api`
+3. Start with `docker compose up -d --build`
+4. For production, reverse proxy traffic to `127.0.0.1:3000`
 
-📖 [Tutorial with images](./docs/BT.md)
+📖 [Tutorial with images](./docs/installation/BT.md)
 
 </details>
+
+📖 Additional references:
+
+- [Standard Server Deployment](./docs/installation/server.md)
+- [Production Deployment with Domain and HTTPS](./docs/installation/production.md)
 
 ### ⚠️ Multi-machine Deployment Considerations
 

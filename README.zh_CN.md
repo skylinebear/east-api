@@ -151,7 +151,11 @@ docker run --name new-api -d --restart always \
 
 🎉 部署完成后，访问 `http://localhost:3000` 即可使用！
 
-📖 更多部署方式请参考 [部署指南](https://github.com/skylinebear/east-api/tree/main/docs)
+📖 更多部署方式请参考：
+- [安装与部署索引](./docs/installation/README.md)
+- [标准云服务器部署](./docs/installation/server.md)
+- [域名与 HTTPS 生产部署](./docs/installation/production.md)
+- [宝塔面板部署](./docs/installation/BT.md)
 
 ---
 
@@ -167,7 +171,7 @@ docker run --name new-api -d --restart always \
 
 | 分类 | 链接 |
 |------|------|
-| 🚀 部署指南 | [安装文档](https://github.com/skylinebear/east-api/tree/main/docs) |
+| 🚀 部署指南 | [安装与部署索引](./docs/installation/README.md) |
 | ⚙️ 环境配置 | [环境变量](https://github.com/skylinebear/east-api/tree/main/docs) |
 | 📡 接口文档 | [API 文档](https://github.com/skylinebear/east-api/tree/main/docs) |
 | ❓ 常见问题 | [FAQ](https://github.com/skylinebear/east-api/tree/main/docs) |
@@ -381,13 +385,19 @@ docker run --name new-api -d --restart always \
 <details>
 <summary><strong>方式 3：宝塔面板</strong></summary>
 
-1. 安装宝塔面板（≥ 9.2.0 版本）
-2. 在应用商店搜索 **New-API**
-3. 一键安装
+1. 安装宝塔面板与 Docker
+2. 克隆 `skylinebear/east-api`
+3. 使用 `docker compose up -d --build` 启动
+4. 生产环境再通过宝塔站点反向代理到 `127.0.0.1:3000`
 
 📖 [图文教程](./docs/installation/BT.md)
 
 </details>
+
+📖 补充文档：
+
+- [标准云服务器部署](./docs/installation/server.md)
+- [域名与 HTTPS 生产部署](./docs/installation/production.md)
 
 ### ⚠️ 多机部署注意事项
 

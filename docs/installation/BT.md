@@ -1,8 +1,11 @@
 # 宝塔面板部署教程
 
-本文档提供使用宝塔面板 Docker 功能部署 EASTCREA 的图文教程。
+本文档提供使用宝塔面板部署 `skylinebear/east-api` 的落地步骤。
 
-> 📖 官方文档：[宝塔面板部署](https://github.com/skylinebear/east-api/tree/main/docs)
+> 📖 相关文档：
+> - [安装与部署索引](./README.md)
+> - [标准云服务器部署](./server.md)
+> - [域名与 HTTPS 生产部署](./production.md)
 
 ***
 
@@ -32,25 +35,11 @@
 
 ***
 
-## 步骤三：安装 EASTCREA
+## 步骤三：部署 EASTCREA
 
-### 方法一：使用宝塔应用商店（推荐）
+### 方法一：使用 Docker Compose（推荐）
 
-1. 在宝塔面板 Docker 功能中，点击 **应用商店**
-2. 搜索并找到 **New-API**
-3. 点击 **安装**
-4. 配置以下基本选项：
-   - **容器名称**：可自定义，默认为 `new-api`
-   - **端口映射**：默认为 `3000:3000`
-   - **环境变量**：
-     - `SESSION_SECRET`：会话密钥（**必填**，多机部署时必须一致）
-     - `CRYPTO_SECRET`：加密密钥（使用 Redis 时必填）
-5. 点击 **确认** 开始安装
-6. 等待安装完成后，访问 `http://您的服务器IP:3000` 即可使用
-
-### 方法二：使用 Docker Compose
-
-1. 在宝塔面板中创建网站目录，如 `/www/wwwroot/new-api`
+1. 在宝塔面板中创建网站目录，如 `/www/wwwroot/east-api`
 2. 克隆你自己的源码，或把当前仓库上传到服务器：
 
 ```bash
@@ -64,6 +53,33 @@ cd east-api
 ```bash
 docker compose up -d --build
 ```
+
+4. 如果只是临时测试，可直接访问 `http://您的服务器IP:3000`
+
+### 方法二：使用宝塔站点反向代理（生产推荐）
+
+1. 将 `docker-compose.yml` 中的端口映射改为：
+
+```yaml
+ports:
+  - "127.0.0.1:3000:3000"
+```
+
+2. 重新启动容器：
+
+```bash
+docker compose up -d --build
+```
+
+3. 在宝塔中创建站点，例如 `api.example.com`
+4. 进入站点设置，添加反向代理，目标地址填写：
+
+```text
+http://127.0.0.1:3000
+```
+
+5. 在站点 SSL 页面申请 Let’s Encrypt 证书
+6. 通过 `https://你的域名/setup` 完成系统初始化
 
 ***
 
@@ -98,6 +114,8 @@ head -c 16 /dev/urandom | xxd -p
 2. 在宝塔面板 **安全** 中放行 3000 端口
 3. 检查云服务器安全组是否开放端口
 
+如果你已经改为 `127.0.0.1:3000:3000`，那么外网无法直接访问 `3000` 是正常现象，此时应通过站点反向代理后的域名访问。
+
 ### Q2：登录后提示会话失效？
 
 确保设置了 `SESSION_SECRET` 环境变量，且值不为空。
@@ -125,9 +143,9 @@ docker compose down && docker compose up -d --build
 
 ## 相关链接
 
-- [官方文档](https://github.com/skylinebear/east-api/tree/main/docs)
-- [环境变量配置](https://github.com/skylinebear/east-api/tree/main/docs)
-- [常见问题](https://github.com/skylinebear/east-api/tree/main/docs)
+- [安装与部署索引](./README.md)
+- [标准云服务器部署](./server.md)
+- [域名与 HTTPS 生产部署](./production.md)
 - [GitHub 仓库](https://github.com/skylinebear/east-api)
 
 ***
